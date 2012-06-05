@@ -1,3 +1,7 @@
+<?php require_once( 'couch/cms.php' ); ?>
+<cms:template title='Section Page' clonable='1'>
+	<cms:editable name='section_content' type='richtext' />
+</cms:template>
 <!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
@@ -36,15 +40,16 @@
 </head>
 <body>
 	<div class="fixed-bar">
-		<div class="row">
-		<header class="four columns offset-by-one">
-			<h1><a href="index.html">Me<span>.</span>Mu</a></h1>
-			<img src="images/logo.png" alt="Me.Mu">
+		<div class="header-container">
+		<header>
+			<h1><a href="index.php">Me<span>.</span>Mu</a></h1>
+			<img class="logo" src="images/logo.png" alt="Me.Mu">
+			<!-- <img src="images/memu_1big.png" alt=""> -->
 		</header>
-		<nav class="seven columns">
+		<nav>
 			<ul>
-				<li><a class="active" href="#"><span>Games</span></a></li>
-				<li><a href="#"><span>About</span></a></li>
+				<li><a class="active" href="section.php?p=2"><span>About</span></a></li>
+				<li><a href="section.php?p=3"><span>Games</span></a></li>
 				<li><a href="#"><span>Process</span></a></li>
 			</ul>
 		</nav>
@@ -53,10 +58,10 @@
 	<!-- container -->
 	<div class="container">
 		<div class="row">
-			<div class="eight columns centered">
+			<div class="ten columns centered">
 				<div class="row">
 					<div class="twelve columns">
-						
+						<cms:show section_content />
 					</div>
 				</div>
 			</div>
@@ -73,3 +78,4 @@
 
 </body>
 </html>
+<?php COUCH::invoke(); ?>

@@ -1,4 +1,5 @@
 <?php require_once( 'couch/cms.php' ); ?>
+<cms:template title='Index Page' />
 <!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
@@ -43,7 +44,7 @@
 				<header>
 					<h1>Me<span>.</span>Mu</h1>
 					<p><cms:editable name='tagline' type='text'>social learning through playful movement</cms:editable></p>
-					<img src="images/logo.png" alt="Me.Mu">
+					<img class="logo" src="images/logo.png" alt="Me.Mu">
 				</header>
 			</div>
 		</div>
@@ -52,7 +53,7 @@
 				<nav class="row">
 					<cms:editable name='home_nav' type='richtext'>
 					<ul>
-						<li class="four columns"><a class="active" href="#"><span>Games</span></a></li>
+						<li class="four columns"><a href="#"><span>Games</span></a></li>
 						<li class="four columns"><a href="#"><span>About</span></a></li>
 						<li class="four columns"><a href="#"><span>Process</span></a></li>
 					</ul>

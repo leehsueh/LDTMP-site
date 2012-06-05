@@ -76,37 +76,22 @@ nav {
 		left:@circleOffsetLeft;
 		width: @circleSizeNormal;
 		height: @circleSizeNormal;
-		background: white;
 		border-radius:@circleSizeHover / 1.5;
-		font: 140% SnigletRegular, "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
-		text-align: center;
-		text-transform:uppercase;
-		color:darken(@memuPink, 10);
-		border:3px @memuGreen solid;
-		// margin: 0 22.5%;
-
-		.transition;
-
-		&.active {
-			background: darken(@memuGreen, 0);
-			color:white;
-			border:3px @memuPink solid;
-		}
-		&.active {
-		}
+		font-size: 110%;
+		
 		&:hover {
-			background: darken(@memuGreen, 0);
-			color:white;
+			// background: darken(@memuGreen, 0);			
 			width:@circleSizeHover;
 			height: @circleSizeHover;
 			top:@circleOffsetTop - (@circleSizeHover - @circleSizeNormal) / 2;
 			left:@circleOffsetLeft - (@circleSizeHover - @circleSizeNormal) / 2;
-			border:3px @memuPink solid;
+			
+			.rotate(360deg);
 		}
 
 		span {
 			display:block;
-			padding: @circleSizeNormal / 2 - 10 0;
+			padding: @circleSizeNormal / 2 - 15 0;
 		}
 	}
 }
