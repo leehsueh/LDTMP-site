@@ -50,7 +50,7 @@
 			<ul>
 				<li><a class="active" href="section.php?p=2"><span>About</span></a></li>
 				<li><a href="section.php?p=3"><span>Games</span></a></li>
-				<li><a href="#"><span>Process</span></a></li>
+				<li><a href="section.php?p=4"><span>Process</span></a></li>
 			</ul>
 		</nav>
 		</div>

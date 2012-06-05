@@ -103,31 +103,33 @@ nav ul li a {
 	letter-spacing: 2px;
 	text-align: center;
 	text-transform:uppercase;
-	color:lighten(@memuPink, 10);
+	color:darken(@memuPink, 10);
+	font-weight:bold;
 	&:focus {
 		color:lighten(@memuPink, 10);
 	}
-	text-shadow: -1px 0 darken(@memuPink, 30),
-					1px 0 darken(@memuPink, 30),
-					0 1px darken(@memuPink, 30),
-					0 -1px darken(@memuPink, 30);
-	border:3px @memuGreen solid;
+	// text-shadow: -1px 0 darken(@memuPink, 30),
+	// 				1px 0 darken(@memuPink, 30),
+	// 				0 1px darken(@memuPink, 30),
+	// 				0 -1px darken(@memuPink, 30);
+	border:2px @memuGreen solid;
 	.transition;
 
 	&.active, &:hover {
 		background: lighten(@memuGreen,25);
-		text-shadow: -1px 0 darken(@memuGreen, 40),
-					1px 0 darken(@memuGreen, 40),
-					0 1px darken(@memuGreen, 40),
-					0 -1px darken(@memuGreen, 40);
-		color:darken(@memuGreen,10);
+		// text-shadow: -1px 0 darken(@memuGreen, 40),
+		// 			1px 0 darken(@memuGreen, 40),
+		// 			0 1px darken(@memuGreen, 40),
+		// 			0 -1px darken(@memuGreen, 40);
+		color:darken(@memuGreen,25);
 	}
 	&.active {
 		font-weight:bold;
-		border:3px darken(@memuGreen, 0) solid;
+		border:2px darken(@memuGreen, 0) solid;
 	}
 	&:hover {
 		.rotate(-30deg);
+		cursor: pointer;
 	}
 }
 
@@ -139,4 +141,10 @@ p, ul, ol {
 	font-family: 'Lato';
 	font-size:1.6em;
 	line-height:1.6;
+}
+blockquote {
+	font-style:italic;
+	p {
+		line-height:1.6em;
+	}
 }
