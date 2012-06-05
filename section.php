@@ -61,7 +61,7 @@
 			<div class="ten columns centered">
 				<div class="row">
 					<div class="twelve columns">
-						<cms:show section_content />
+						<cms:do_shortcodes><cms:show section_content /></cms:do_shortcodes>
 					</div>
 				</div>
 			</div>
