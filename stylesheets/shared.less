@@ -95,11 +95,11 @@ header {
 	position: relative;
 	margin-bottom: 50px;
 }
-
+nav ul li { list-style-type:none;}
 nav ul li a {
 	display:block;
 	background: white;
-	font: 110%  "Lato";
+	font: 110% "Lato";
 	letter-spacing: 2px;
 	text-align: center;
 	text-transform:uppercase;
@@ -141,6 +141,13 @@ p, ul, ol {
 	font-family: 'Lato';
 	font-size:1.6em;
 	line-height:1.6;
+}
+ul li {
+	list-style-type:circle;
+	list-style-position:inside;
+}
+ul ul, ul ol, ol ol, ol ul {
+	font-size:1em;
 }
 blockquote {
 	font-style:italic;
