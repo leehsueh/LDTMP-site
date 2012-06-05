@@ -13,17 +13,7 @@
 /* -----------------------------------------
    Typography/fonts
 ----------------------------------------- */
-@font-face {
-    font-family: 'SnigletRegular';
-    src: url('Sniglet-webfont.eot');
-    src: url('Sniglet-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Sniglet-webfont.woff') format('woff'),
-         url('Sniglet-webfont.ttf') format('truetype'),
-         url('Sniglet-webfont.svg#SnigletRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
+@import 'shared';
 
 /* -----------------------------------------
    Shared Styles
@@ -33,30 +23,7 @@
 @navHeight: @circleSizeHover + 30;
 @circleOffsetTop: 0px;
 @circleOffsetLeft: 50px;
-@memuGreen: #86ca88;
-@memuPink: #f27fb2;
-@memuBabyBlue: #cbecff;
 
-.transition(@duration: 0.4s, @function: ease) {
-	-webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-}
-
-.panel-shadow(@x:0, @y:2px, @amt: 5px, @color:rgba(0, 0, 0, 0.15)) {
-	box-shadow: @x @y @amt @color;
-	-webkit-box-shadow: @x @y @amt @color;
-	-moz-box-shadow: @x @y @amt @color;
-}
-
-.gradient(@fallbackbg: #EFEFEF, @startColor:white, @endColor:#F4F4F4) {
-	background: @fallbackbg;
-	background: -moz-linear-gradient(top, @startColor 0%, @endColor 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@startColor), color-stop(100%,@endColor));
-	background: -o-linear-gradient(top, @startColor 0%, @endColor 100%);
-}
 body {
 	// .gradient(#EEE, #EFEFEF, #E6E6E6);
 	background: lighten(@memuBabyBlue, 5);
