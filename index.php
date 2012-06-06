@@ -44,7 +44,7 @@
 				<header>
 					<h1>Me<span>.</span>Mu</h1>
 					<p><cms:editable name='tagline' type='text'>social learning through playful movement</cms:editable></p>
-					<img class="logo" src="images/logo.png" alt="Me.Mu">
+					<img class="logo" src="images/SmileyFace.png" alt="Me.Mu">
 				</header>
 			</div>
 		</div>

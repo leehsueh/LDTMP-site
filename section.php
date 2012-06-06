@@ -43,7 +43,7 @@
 		<div class="header-container">
 		<header>
 			<h1><a href="index.php">Me<span>.</span>Mu</a></h1>
-			<img class="logo" src="images/logo.png" alt="Me.Mu">
+			<img class="logo" src="images/SmileyFace.png" alt="Me.Mu">
 			<!-- <img src="images/memu_1big.png" alt=""> -->
 		</header>
 		<nav>
@@ -51,6 +51,7 @@
 				<li><a class="active" href="section.php?p=2"><span>About</span></a></li>
 				<li><a href="section.php?p=3"><span>Games</span></a></li>
 				<li><a href="section.php?p=4"><span>Process</span></a></li>
+				<li><a href="section.php?p=5"><span>Team</span></a></li>
 			</ul>
 		</nav>
 		</div>
