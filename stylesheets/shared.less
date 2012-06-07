@@ -10,10 +10,10 @@
 
 }
 
-@font-face {
-	font-family: 'BPreplay kRB';
-	src: url('fonts/bpreplay-kRB.eot?') format('eot'), url('fonts/bpreplay-kRB.ttf') format('truetype'), url('fonts/bpreplay-kRB.woff') format('woff');
-}
+// @font-face {
+// 	font-family: 'BPreplay kRB';
+// 	src: url('fonts/bpreplay-kRB.eot?') format('eot'), url('fonts/bpreplay-kRB.ttf') format('truetype'), url('fonts/bpreplay-kRB.woff') format('woff');
+// }
 
 
 @font-face {
@@ -29,6 +29,18 @@
 	font-style: italic;
 	font-weight: 200;
 	src: url('fonts/Lato-Lightitalic.eot?#') format('eot'), url('fonts/Lato-Lightitalic.ttf') format('truetype'), url('.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DKHarimauRegular';
+    src: url('fonts/dk_harimau-webfont.eot');
+    src: url('fonts/dk_harimau-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dk_harimau-webfont.woff') format('woff'),
+         url('fonts/dk_harimau-webfont.ttf') format('truetype'),
+         url('fonts/dk_harimau-webfont.svg#DKHarimauRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 .transition(@duration: 0.4s, @function: ease) {
@@ -59,36 +71,52 @@
 	-o-transform: rotate(@deg);
 }
 
+.scale(@x:1, @y:1) {
+	transform: scale(@x, @y);
+	-webkit-transform: scale(@x, @y);
+	-moz-transform: scale(@x, @y);
+	-o-transform: scale(@x, @y);
+}
+
+.rotateAndScale(@deg:-2deg, @x:1, @y:1) {
+	transform: scale(@x, @y) rotate(@deg);
+	-webkit-transform: scale(@x, @y) rotate(@deg);
+	-moz-transform: scale(@x, @y) rotate(@deg);
+	-o-transform: scale(@x, @y) rotate(@deg);
+}
+
 @memuGreen: #86ca88;
 @memuPink: #f27fb2;
 @memuBabyBlue: #cbecff;
 
 header {
 	h1 {
-		font: SnigletRegular;
+		font-family: SnigletRegular;
+		.scale(1, 1.15);
 		font-weight:normal;
 		text-align: right;
 		color: @memuGreen;
-		text-shadow: 1px 1px 1px darken(@memuGreen, 50);
+		text-shadow: 1px 1px 1px darken(@memuGreen, 40);
 		z-index:2;
 		span {
 			color: @memuPink;
 		}
 	}
 	p {
-		font-family: 'Architects Daughter', sans-serif;
+		font-family: 'DKHarimauRegular', sans-serif;
 		width:80%;
 		float:right;
 		margin-top:-30px;
 		text-align: right;
+		// font-weight:normal;
 	}
 
 	img.logo {
 		position: absolute;
 		display: block;
 		width:25%;
-		top: -30px;
-		left: -7.5%;
+		left: -6%;
+		z-index:-1;
 	}
 	&::after{ content: "."; display: block; height: 0; font-size:0; clear: both; visibility:hidden; }
 
@@ -99,7 +127,7 @@ nav ul li { list-style-type:none;}
 nav ul li a {
 	display:block;
 	background: white;
-	font: 110% "Lato";
+	font: 110% "DKHarimauRegular";
 	letter-spacing: 2px;
 	text-align: center;
 	text-transform:uppercase;
@@ -133,14 +161,12 @@ nav ul li a {
 	}
 }
 
-h1,h2,h3,h4 {
-	font-family:'Architects Daughter';
-	font-weight:normal;
-}
+
 p, ul, ol {
 	font-family: 'Lato';
 	font-size:1.6em;
 	line-height:1.6;
+	font-weight:bold;
 }
 ul li {
 	list-style-type:circle;

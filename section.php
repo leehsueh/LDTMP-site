@@ -57,7 +57,7 @@
 		</div>
 	</div>
 	<!-- container -->
-	<div class="container">
+	<div class="container content-container">
 		<div class="row">
 			<div class="ten columns centered">
 				<div class="row">

@@ -4,7 +4,7 @@
 @fixedBarPadding: 10px;
 
 body {
-	background:lighten(@memuGreen, 28);
+	background:lighten(@memuGreen, 29);
 }
 
 .fixed-bar {
@@ -20,6 +20,7 @@ body {
 	.header-container {
 		margin: 0 auto;
 		width:800px;
+		padding-top:3px;
 	}
 	header {
 		float:left;
@@ -39,12 +40,12 @@ body {
 				color: @memuGreen;
 			}
 			&:hover {
-				.rotate;
+				.rotateAndScale(-2deg, 1, 1.15);
 			}
 		}
 		img.logo {
-			top:0;
-			left:-58px;
+			top:-8px;
+			left:-55px;
 			z-index:-1;
 			width:74px;
 		}
@@ -73,7 +74,7 @@ body {
 }
 
 .container {
-	margin-top: @fixedBarHeight + 3 * @fixedBarPadding;
+	margin-top: @fixedBarHeight + 2 * @fixedBarPadding;
 	.float-left {
 		float: left;
 		margin:15px 15px 0 0;
@@ -82,4 +83,9 @@ body {
 		float:right;
 		margin:15px 0 0 15px;
 	}
+}
+.content-container h1,h2,h3,h4 {
+	font-family:'DKHarimauRegular';
+	font-weight:normal;
+	margin-top:40px;
 }
