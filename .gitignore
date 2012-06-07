@@ -1,3 +1,5 @@
 .DS_Store
 php54.cgi
 couch/*
+.htaccess
+php53.cgi
