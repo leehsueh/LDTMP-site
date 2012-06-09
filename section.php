@@ -48,10 +48,10 @@
 		</header>
 		<nav>
 			<ul>
-				<li><a class="active" href="section.php?p=2"><span>About</span></a></li>
-				<li><a href="section.php?p=3"><span>Games</span></a></li>
-				<li><a href="section.php?p=4"><span>Process</span></a></li>
-				<li><a href="section.php?p=5"><span>Team</span></a></li>
+				<li><a <cms:if k_page_title == 'About'>class="active"</cms:if> href="section.php?p=2"><span>About</span></a></li>
+				<li><a <cms:if k_page_title == 'Games'>class="active"</cms:if> href="section.php?p=3"><span>Games</span></a></li>
+				<li><a <cms:if k_page_title == 'Process'>class="active"</cms:if> href="section.php?p=4"><span>Process</span></a></li>
+				<li><a <cms:if k_page_title == 'Team'>class="active"</cms:if> href="section.php?p=5"><span>Team</span></a></li>
 			</ul>
 		</nav>
 		</div>
