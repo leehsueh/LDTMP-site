@@ -13,7 +13,7 @@
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
 
-	<title>Me.Mu - Social Learning Through Playful Movement</title>
+	<title>Me.Mu - Socio-emotional Learning Through Play and Reflection</title>
   
 	<!-- Included CSS Files -->
 	<link href="http://fonts.googleapis.com/css?family=Architects Daughter&subset=latin" rel="stylesheet" type="text/css">
