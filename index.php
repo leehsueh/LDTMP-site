@@ -54,13 +54,13 @@
 		</div>
 		<div class="row">
 			<div class="six columns">
-				<a href="kinect/"><div class="product-container" id="memu-kinect-container">
+				<a href="kinect.php"><div class="product-container" id="memu-kinect-container">
 					<img src="images/memu_1big.png" alt="Me.Mu for Kinect">
 					<p>A pair of mini-games using Kinect&trade; for Windows</p>
 				</div></a>
 			</div>
 			<div class="six columns">
-				<a href="emotionary/"><div class="product-container" id="emotionary-container">
+				<a href="emotionary.php"><div class="product-container" id="emotionary-container">
 					<img src="images/emotionary/emotionarybanner.png" alt="Emotionary for iPad">
 					<p>An emotion diary iPad app</p>
 				</div></a>
