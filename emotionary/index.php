@@ -15,7 +15,7 @@
 	<title>Me.Mu - Socio-emotional Learning Through Play and Reflection</title>
   
 	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="../stylesheets/foundation.css">
+	<link rel="stylesheet" href="../stylesheets/foundation.min.css">
 	<link rel="stylesheet" href="../stylesheets/emotionary.css">
 	<!-- <link rel="stylesheet/less" type="text/css" href="stylesheets/app.less"> -->
 
@@ -38,7 +38,7 @@
 	<!-- container -->
 	<div class="container">
 		<div class="row banner">
-			<div class="twelve columns centered">
+			<div class="ten columns centered">
 				<header>
 					<img id="smiley" src="../images/SmileyFace.png" alt="Me.Mu">
 					<p id="memu-text"><a href="../">Me<span>.</span>Mu</a></p>
@@ -50,7 +50,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="twelve columns centered">
+			<div class="ten columns centered">
 				<p id="coming-soon-text">Coming soon!</p>
 				<p>Emotionary by Me.Mu is an emotion diary tool for iPad. It's designed for therapists to help children and adolescents with autism or similar mental disorders understand emotions in the context of their own lives.</p>
 			</div>
@@ -64,7 +64,7 @@
 
 	<!-- Included JS Files -->
 	<script src="../javascripts/jquery.min.js"></script>
-	<script src="../javascripts/foundation.js"></script>
+	<script src="../javascripts/foundation.min.js"></script>
 	<script src="../javascripts/app.js"></script>
 
 </body>

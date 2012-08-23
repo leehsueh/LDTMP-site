@@ -24,10 +24,6 @@
 @circleOffsetTop: 0px;
 @circleOffsetLeft: 50px;
 
-body {
-	// .gradient(#EEE, #EFEFEF, #E6E6E6);
-	background: lighten(@memuBabyBlue, 5) url('../images/emotionary/cross_line_texture_tile.png') repeat;
-}
 .banner {
 	margin-top:50px;
 }
@@ -57,6 +53,7 @@ header {
 		font-size: 2em;
 		text-align: right;
 		line-height:1.2;
+		margin-top: 40px;
 	}
 
 	
@@ -64,39 +61,81 @@ header {
 
 	margin-bottom: 50px;
 }
-.faded-panel {
-	.border-radius(10px);
-	.panel-shadow(0, 2px, 5px, rgba(0, 0, 0, 0.3));
-	background-color: rgba(255, 255, 255, 0.5);
-	padding: 40px;
-}
-#masthead {
-	.faded-panel;
-	margin-bottom: 40px;
-}
 
-#products-container {
-	text-align: center;
-	div {
-		display: inline-block;
-		margin: 25px;
-		img {
-			width: 100%;
-			.transition;
-			&:hover {
-				.rotateAndScale;
+.product-container {
+	.faded-panel;
+	height: 300px;
+	margin-bottom: 50px;
+	p {
+		margin-top: 20px;
+		font-size: 1.75em;
+		font-family: 'DKHarimauRegular', sans-serif;
+		text-align: center;
+	}
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.75);
+		.panel-shadow(0, 2px, 10px, rgba(0, 0, 0, 0.5));
+	}
+}
+.tabs-container {
+	dl.tabs.contained {
+		background-color: none;
+		dd {
+			a {
+				// height: 50px;
+				font-size: 1.25em;
+				font-weight: bold;
 			}
+		}
+	}
+
+	ul.tabs-content.contained {
+		background-color: white;
+
+		#team-list {
+			padding-left: 0;
+			li {
+				list-style-type: none;
+				display: block;
+				div.img-container, div.team-info {
+					float: left;
+				}
+				div.img-container {
+					width: 15%;
+					text-align: center;
+				}
+				div.team-info {
+					width: 80%;
+					margin-left: 5%;
+				}
+				&::after{ content: "."; display: block; height: 0; font-size:0; clear: both; visibility:hidden; }
+			}
+		}
+	}
+
+	p, #acknowledgementsTab li {
+		font-size: 1.25em;
+		font-weight: normal;
+		letter-spacing: 1px;
+		color: black;
+
+		a {
+			font-weight: bold;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	#acknowledgementsTab {
+		ul li {
+			list-style-type: dot;
+			list-style-position: outside;
 		}
 	}
 }
 
-#team-list {
-	padding-left: 0;
-	li {
-		list-style-type: none;
-		display: block;
-	}
-}
+
+
 
 nav {
 	height: @navHeight;

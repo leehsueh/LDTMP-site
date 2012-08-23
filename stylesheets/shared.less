@@ -49,11 +49,11 @@
 
 @font-face {
     font-family: 'Claire Hand';
-    src: url('clairehandbold-webfont.eot');
-    src: url('clairehandbold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('clairehandbold-webfont.woff') format('woff'),
-         url('clairehandbold-webfont.ttf') format('truetype'),
-         url('clairehandbold-webfont.svg#claire_handregular') format('svg');
+    src: url('fonts/clairehandbold-webfont.eot');
+    src: url('fonts/clairehandbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/clairehandbold-webfont.woff') format('woff'),
+         url('fonts/clairehandbold-webfont.ttf') format('truetype'),
+         url('fonts/clairehandbold-webfont.svg#claire_handregular') format('svg');
     font-weight: bold;
     font-style: normal;
 
@@ -61,11 +61,11 @@
 
 @font-face {
     font-family: 'Claire Hand';
-    src: url('clairehandlight-webfont.eot');
-    src: url('clairehandlight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('clairehandlight-webfont.woff') format('woff'),
-         url('clairehandlight-webfont.ttf') format('truetype'),
-         url('clairehandlight-webfont.svg#claire_handlight') format('svg');
+    src: url('fonts/clairehandlight-webfont.eot');
+    src: url('fonts/clairehandlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/clairehandlight-webfont.woff') format('woff'),
+         url('fonts/clairehandlight-webfont.ttf') format('truetype'),
+         url('fonts/clairehandlight-webfont.svg#claire_handlight') format('svg');
     font-weight: lighter;
     font-style: normal;
 
@@ -73,16 +73,23 @@
 
 @font-face {
     font-family: 'Claire Hand';
-    src: url('clairehandregular-webfont.eot');
-    src: url('clairehandregular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('clairehandregular-webfont.woff') format('woff'),
-         url('clairehandregular-webfont.ttf') format('truetype'),
-         url('clairehandregular-webfont.svg#claire_handregular') format('svg');
+    src: url('fonts/clairehandregular-webfont.eot');
+    src: url('fonts/clairehandregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/clairehandregular-webfont.woff') format('woff'),
+         url('fonts/clairehandregular-webfont.ttf') format('truetype'),
+         url('fonts/clairehandregular-webfont.svg#claire_handregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
+.background-size(@size) {
+    -webkit-background-size:@size;
+    -moz-background-size:@size;
+    -o-background-size:@size;
+    -ms-background-size:@size;
+    background-size:@size;
+}
 .transition(@duration: 0.4s, @function: ease) {
 	-webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -137,15 +144,20 @@
 @memuBabyBlue: #cbecff;
 
 body {
-	background: url('../images/emotionary/cross_line_texture_tile.png') repeat;
+	background: lighten(@memuBabyBlue, 5) url('../images/emotionary/cross_line_texture_tile.png') repeat;
 }
 .memu-text {
 	font-family: SnigletRegular;
 	color: @memuGreen;
 	text-shadow: 1px 1px 1px darken(@memuGreen, 40);
+	.background-size(20%);
 	.scale(1, 1.15);
 	span {
 		color: @memuPink;
+	}
+	a:link, a:visited, a:active, a:hover {
+		text-decoration: none;
+		color: @memuGreen;
 	}
 }
 header {
@@ -198,12 +210,18 @@ nav ul li a {
 	}
 }
 
+.faded-panel {
+	.border-radius(10px);
+	.panel-shadow(0, 2px, 5px, rgba(0, 0, 0, 0.3));
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 40px;
+}
 
 p, ul, ol {
 	font-family: 'Lato';
 	font-size:1.6em;
 	line-height:1.6;
-	font-weight:bold;
+	font-weight: normal;
 }
 ul li {
 	list-style-type:circle;
@@ -222,4 +240,5 @@ blockquote {
 footer {
 	margin-top: 100px;
 	text-align: center;
+	font-size: 0.75em;
 }

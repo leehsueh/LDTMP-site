@@ -53,56 +53,72 @@
 			</header>
 		</div>
 		<div class="row">
-			<div class="seven columns">
-				<div id="masthead">
-					<p>Me.Mu is a project whose aim is to develop innovative solutions to facilitate socio-emotional development in individuals with autism and similar mental disorders.</p>
-					<p>Currently the project consists of two products - one for the Kinect, and another for the iPad.</p>
-				</div>
+			<div class="six columns">
+				<a href="kinect/"><div class="product-container" id="memu-kinect-container">
+					<img src="images/memu_1big.png" alt="Me.Mu for Kinect">
+					<p>A pair of mini-games using Kinect&trade; for Windows</p>
+				</div></a>
 			</div>
-			<div class="five columns">
-				<div id="products-container">
-					<div id="memu-kinect-container">
-						<a href="kinect/"><img src="images/memu_1big.png" alt="Me.Mu for Kinect"></a>
-					</div>
-					<div id="emotionary-container">
-						<a href="emotionary/"><img src="images/emotionary/emotionarybanner.png" alt="Emotionary for iPad"></a>
-					</div>
-				</div>
+			<div class="six columns">
+				<a href="emotionary/"><div class="product-container" id="emotionary-container">
+					<img src="images/emotionary/emotionarybanner.png" alt="Emotionary for iPad">
+					<p>An emotion diary iPad app</p>
+				</div></a>
 			</div>
 		</div>
-		<div class="row faded-panel">
+		<div class="row faded-panel tabs-container">
 			<dl class="tabs contained">
-			  <dd class="active"><a href="#simpleContained1">Our Story</a></dd>
-			  <dd><a href="#simpleContained2">Acknowledgments</a></dd>
-			  <dd class="hide-on-phones"><a href="#simpleContained3">Team</a></dd>
+			  <dd class="active"><a href="#story">Our Story</a></dd>
+			  <dd><a href="#acknowledgements">Acknowledgments</a></dd>
+			  <dd><a href="#team">Team</a></dd>
 			</dl>
 			<ul class="tabs-content contained">
-			  <li class="active" id="simpleContained1Tab">
-			  	<p>This project grew out of Stanford University's Learning, Design, and Technology program in the School of Education. <a class="fancybox fancybox.iframe" href="http://www.youtube.com/embed/OzAzSYp_7rc?autoplay=1">Watch our video</a> that describes our design process and approach. If you're interested in more details, you can read our master's project report.</p>
+			  <li class="active" id="storyTab">
+			  	<p><strong>Me.Mu</strong> is a project whose aim is to develop innovative solutions to facilitate <strong>socio-emotional development</strong> in individuals with <strong>autism and similar mental disorders</strong>.</p>
+				<p>Currently the project consists of two products designed to be used in a therapy setting - <a href="kinect/">one for the Kinect</a>, and <a href="emotionary/">another for the iPad</a>.</p>
+			  	<p>This project grew out of Stanford University's <a href="http://ldt.stanford.edu" target="_blank">Learning, Design, and Technology program</a> in the School of Education. <a class="fancybox fancybox.iframe" href="http://www.youtube.com/embed/OzAzSYp_7rc?autoplay=1">Watch our video</a> that describes our design process and approach. If you're interested in more details, you can read our <a href="files/ldtmp_report.pdf">master's project report</a>.</p>
 			  </li>
-			  <li id="simpleContained2Tab">
+			  <li id="acknowledgementsTab">
 			  	<p>This project would not have been possible without the following.</p>
 			  	<ul>
-			  		<li>Olivia Krakower, Silvia Pinto, Kurt Ohlfs, and Beth Harmon at the Pacific Autism Center for Education (PACE)</li>
-			  		<li>Michelle Fong at Associated Learning and Language Specialists (ALLSINC)</li>
-			  		<li>Rebecca Berry, Diana Smith, and Camille Castillo Leach at Developmental Pathways for Kids (DPK)</li>
+			  		<li><strong>Olivia Krakower</strong>, <strong>Silvia Pinto</strong>, <strong>Kurt Ohlfs</strong>, and <strong>Beth Harmon</strong> at the <a href="http://pacificautism.org" target="_blank">Pacific Autism Center for Education (PACE)</a></li>
+			  		<li><strong>Michelle Fong</strong> at <a href="http://allsinc.com" target="_blank">Associated Learning and Language Specialists (ALLSINC)</a></li>
+			  		<li><strong>Rebecca Berry</strong>, <strong>Diana Smith</strong>, and <strong>Camille Castillo Leach</strong> at <a href="http://developmentalpathways.com" target="_blank">Developmental Pathways for Kids (DPK)</a></li>
 			  		<li>All students who tested our project!</li>
-			  		<li>Microsoft for awarding us a Kinect as part of the Imagine Cup Kinect Fun Labs Challenge Competition</li>
-			  		<li>Generous financial support from Mr. Reece Duca</li>
-			  		<li>Wendy MacKay and David Jaffe for their guidance in relevant design coursework</li>
-			  		<li>Our LDT faculty advisors Daniel Schwartz, John Willinsky, and Paulo Blikstein</li>
+			  		<li><strong>Microsoft</strong> for awarding us a Kinect as part of the Imagine Cup Kinect Fun Labs Challenge Competition</li>
+			  		<li>Generous financial support from <strong>Mr. Reece Duca</strong></li>
+			  		<li><strong>Wendy MacKay</strong> and <strong>David Jaffe</strong> for their guidance in relevant design coursework</li>
+			  		<li>Our LDT faculty advisors <strong>Daniel Schwartz</strong>, <strong>John Willinsky</strong>, and <strong>Paulo Blikstein</strong></li>
+			  		<li><strong>Karin Forssell</strong> and the <a href="http://ldt.stanford.edu" target="_blank">LDT Program</a>!</li>
 			  	</ul>
 			  </li>
-			  <li id="simpleContained3Tab">
+			  <li id="teamTab">
 			  	<ul id="team-list">
 			  		<li>
-			  			<h3>Hain-Lee Hsueh</h3>
-			  			<p>Hain-Lee graduated from Cornell University with a B.S. in Electrical and Computer Engineering and a minor in Computer Science in 2009. He worked as an applications engineer at Oracle for two years developing enterprise applications. On the side he also dabbled in various web technologies and frameworks.
-			  			</p>
-			  			<p>Hain-Lee decided to enroll in the LDT program to apply his technical skills to what he felt was a more meaningful domain, namely education. His interest is in designing and prototyping web and mobile software that is informed by educational research to facilitate teaching and learning in productive and innovative ways.</p>
+			  			<div class="img-container">
+			  				<img src="images/hainlee.jpg" alt="Hain-Lee Hsueh">
+			  			</div>
+			  			<div class="team-info">
+			  				<h3>Hain-Lee Hsueh</h3>
+			  				<p class="team-title">UX Designer and Software Engineer</p>
+			  				<ul class="link-list">
+			  					<li><a href="http://leehsueh.com">Website</a></li>
+			  					<li><a href="http://www.linkedin.com/in/leehsueh">LinkedIn</a></li>
+			  				</ul>
+			  			</div>
 			  		</li>
 			  		<li>
-			  			<h3>Anna Ly</h3>
+			  			<div class="img-container">
+			  				<img src="images/anna.jpg" alt="Hain-Lee Hsueh">
+			  			</div>
+			  			<div class="team-info">
+			  				<h3>Anna Ly</h3>
+			  				<p class="team-title">UX and Visual Designer</p>
+			  				<ul class="link-list">
+			  					<li><a href="http://otterdotter.tumblr.com">Website</a></li>
+			  					<li><a href="http://www.linkedin.com/pub/anna-ly/1/284/856">LinkedIn</a></li>
+			  				</ul>
+			  			</div>
 			  		</li>
 			  	</ul>
 			  </li>
