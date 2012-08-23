@@ -1,4 +1,4 @@
-<?php require_once( '../couch/cms.php' ); ?>
+<?php require_once( 'couch/cms.php' ); ?>
 <!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
@@ -15,8 +15,8 @@
 	<title>Me.Mu - Socio-emotional Learning Through Play and Reflection</title>
   
 	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="../stylesheets/foundation.min.css">
-	<link rel="stylesheet" href="../stylesheets/kinect.css">
+	<link rel="stylesheet" href="stylesheets/foundation.min.css">
+	<link rel="stylesheet" href="stylesheets/kinect.css">
 	<!-- <link rel="stylesheet/less" type="text/css" href="stylesheets/app.less"> -->
 
 
@@ -24,7 +24,7 @@
 		<link rel="stylesheet" href="stylesheets/ie.css">
 	<![endif]-->
 	
-	<script src="../javascripts/modernizr.foundation.js"></script>
+	<script src="javascripts/modernizr.foundation.js"></script>
 	<!--<script type="text/javascript" src="javascripts/less-1.3.0.min.js"></script>-->
 
 	<!-- IE Fix for HTML5 Tags -->
@@ -39,7 +39,7 @@
 	<div class="container">
 		<div class="row banner">
 			<div class="twelve columns">
-				<h1 class="memu-text"><a href="../">Me<span>.</span>Mu</a></h1>
+				<h1 class="memu-text"><a href="index.php">Me<span>.</span>Mu</a></h1>
 			</div>
 		</div>
 		<div class="row">
@@ -61,10 +61,10 @@
 
 
 	<!-- Included JS Files -->
-	<script src="../javascripts/jquery.min.js"></script>
-	<script src="../javascripts/foundation.min.js"></script>
-	<script src="../javascripts/app.js"></script>
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/foundation.min.js"></script>
+	<script src="javascripts/app.js"></script>
 
 </body>
 </html>
-<?php //COUCH::invoke(); ?>
+<?php COUCH::invoke(); ?>

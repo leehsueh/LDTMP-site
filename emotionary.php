@@ -1,4 +1,4 @@
-<?php require_once( '../couch/cms.php' ); ?>
+<?php require_once( 'couch/cms.php' ); ?>
 <!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
@@ -15,8 +15,8 @@
 	<title>Me.Mu - Socio-emotional Learning Through Play and Reflection</title>
   
 	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="../stylesheets/foundation.min.css">
-	<link rel="stylesheet" href="../stylesheets/kinect.css">
+	<link rel="stylesheet" href="stylesheets/foundation.min.css">
+	<link rel="stylesheet" href="stylesheets/emotionary.css">
 	<!-- <link rel="stylesheet/less" type="text/css" href="stylesheets/app.less"> -->
 
 
@@ -24,7 +24,7 @@
 		<link rel="stylesheet" href="stylesheets/ie.css">
 	<![endif]-->
 	
-	<script src="../javascripts/modernizr.foundation.js"></script>
+	<script src="javascripts/modernizr.foundation.js"></script>
 	<!--<script type="text/javascript" src="javascripts/less-1.3.0.min.js"></script>-->
 
 	<!-- IE Fix for HTML5 Tags -->
@@ -38,19 +38,21 @@
 	<!-- container -->
 	<div class="container">
 		<div class="row banner">
-			<div class="twelve columns">
-				<h1 class="memu-text"><a href="../">Me<span>.</span>Mu</a></h1>
+			<div class="ten columns centered">
+				<header>
+					<img id="smiley" src="images/SmileyFace.png" alt="Me.Mu">
+					<p id="memu-text"><a href="index.php">Me<span>.</span>Mu</a></p>
+					<p id="introduces-text">introduces...</p>
+					<img src="images/emotionary/emotionarybanner.png" alt="emotionary">
+
+				</header>
+				
 			</div>
 		</div>
 		<div class="row">
-			<div class="three columns">
-				<p><strong>Under Construction!</strong></p>
-				<p>Me.Mu for Kinect for Windows is a pair of mini-games to help children with autism practice social skills while developing general motor coordination.</p>
-			</div>
-			<div class="nine columns">
-				<div class="flex-video widescreen vimeo">
-					<iframe src="http://player.vimeo.com/video/48102302" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/48102302">Me.Mu for Kinect for Windows</a> from <a href="http://vimeo.com/user11570905">Hain-Lee Hsueh</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
-				</div>
+			<div class="ten columns centered">
+				<p id="coming-soon-text">Coming soon!</p>
+				<p>Emotionary by Me.Mu is an emotion diary tool for iPad. It's designed for therapists to help children and adolescents with autism or similar mental disorders understand emotions in the context of their own lives.</p>
 			</div>
 		</div>
 
@@ -61,10 +63,10 @@
 
 
 	<!-- Included JS Files -->
-	<script src="../javascripts/jquery.min.js"></script>
-	<script src="../javascripts/foundation.min.js"></script>
-	<script src="../javascripts/app.js"></script>
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/foundation.min.js"></script>
+	<script src="javascripts/app.js"></script>
 
 </body>
 </html>
-<?php //COUCH::invoke(); ?>
+<?php COUCH::invoke(); ?>
