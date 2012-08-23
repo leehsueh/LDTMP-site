@@ -41,7 +41,7 @@
 			<div class="twelve columns centered">
 				<header>
 					<img id="smiley" src="../images/SmileyFace.png" alt="Me.Mu">
-					<p id="memu-text">Me<span>.</span>Mu</p>
+					<p id="memu-text"><a href="../">Me<span>.</span>Mu</a></p>
 					<p id="introduces-text">introduces...</p>
 					<img src="../images/emotionary/emotionarybanner.png" alt="emotionary">
 

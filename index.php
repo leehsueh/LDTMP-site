@@ -17,7 +17,7 @@
   
 	<!-- Included CSS Files -->
 	<link href="http://fonts.googleapis.com/css?family=Architects Daughter&subset=latin" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="stylesheets/foundation.css">
+	<link rel="stylesheet" href="stylesheets/foundation.min.css">
 	<link rel="stylesheet" href="stylesheets/app.css">
 	<!-- <link rel="stylesheet/less" type="text/css" href="stylesheets/app.less"> -->
 
@@ -34,97 +34,115 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
+	<!-- fancybox -->
+	<link rel="stylesheet" href="javascripts/fancybox2/jquery.fancybox.css?v=2.1.0" type="text/css" media="screen" />
+
+
 </head>
 <body>
 
 	<!-- container -->
 	<div class="container">
 		<div class="row banner">
-			<div class="eight columns centered">
-				<header>
-					<h1>Me<span>.</span>Mu</h1>
-					<p><cms:editable name='tagline' type='text'>social learning through playful movement</cms:editable></p>
+			<header class="twelve columns centered">
+				<div class="six columns memu-banner">
 					<img class="logo" src="images/SmileyFace.png" alt="Me.Mu">
-				</header>
-			</div>
+					<h1>Me<span>.</span>Mu</h1>
+				</div>
+				<div class="six columns"><p><cms:editable name='tagline' type='text'>socio-emotional learning through playful movement</cms:editable></p></div>
+			</header>
 		</div>
 		<div class="row">
-			<div class="eight columns centered">
+			<div class="seven columns">
+				<div id="masthead">
+					<p>Me.Mu is a project whose aim is to develop innovative solutions to facilitate socio-emotional development in individuals with autism and similar mental disorders.</p>
+					<p>Currently the project consists of two products - one for the Kinect, and another for the iPad.</p>
+				</div>
+			</div>
+			<div class="five columns">
+				<div id="products-container">
+					<div id="memu-kinect-container">
+						<a href="kinect/"><img src="images/memu_1big.png" alt="Me.Mu for Kinect"></a>
+					</div>
+					<div id="emotionary-container">
+						<a href="emotionary/"><img src="images/emotionary/emotionarybanner.png" alt="Emotionary for iPad"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row faded-panel">
+			<dl class="tabs contained">
+			  <dd class="active"><a href="#simpleContained1">Our Story</a></dd>
+			  <dd><a href="#simpleContained2">Acknowledgments</a></dd>
+			  <dd class="hide-on-phones"><a href="#simpleContained3">Team</a></dd>
+			</dl>
+			<ul class="tabs-content contained">
+			  <li class="active" id="simpleContained1Tab">
+			  	<p>This project grew out of Stanford University's Learning, Design, and Technology program in the School of Education. <a class="fancybox fancybox.iframe" href="http://www.youtube.com/embed/OzAzSYp_7rc?autoplay=1">Watch our video</a> that describes our design process and approach. If you're interested in more details, you can read our master's project report.</p>
+			  </li>
+			  <li id="simpleContained2Tab">
+			  	<p>This project would not have been possible without the following.</p>
+			  	<ul>
+			  		<li>Olivia Krakower, Silvia Pinto, Kurt Ohlfs, and Beth Harmon at the Pacific Autism Center for Education (PACE)</li>
+			  		<li>Michelle Fong at Associated Learning and Language Specialists (ALLSINC)</li>
+			  		<li>Rebecca Berry, Diana Smith, and Camille Castillo Leach at Developmental Pathways for Kids (DPK)</li>
+			  		<li>All students who tested our project!</li>
+			  		<li>Microsoft for awarding us a Kinect as part of the Imagine Cup Kinect Fun Labs Challenge Competition</li>
+			  		<li>Generous financial support from Mr. Reece Duca</li>
+			  		<li>Wendy MacKay and David Jaffe for their guidance in relevant design coursework</li>
+			  		<li>Our LDT faculty advisors Daniel Schwartz, John Willinsky, and Paulo Blikstein</li>
+			  	</ul>
+			  </li>
+			  <li id="simpleContained3Tab">
+			  	<ul id="team-list">
+			  		<li>
+			  			<h3>Hain-Lee Hsueh</h3>
+			  			<p>Hain-Lee graduated from Cornell University with a B.S. in Electrical and Computer Engineering and a minor in Computer Science in 2009. He worked as an applications engineer at Oracle for two years developing enterprise applications. On the side he also dabbled in various web technologies and frameworks.
+			  			</p>
+			  			<p>Hain-Lee decided to enroll in the LDT program to apply his technical skills to what he felt was a more meaningful domain, namely education. His interest is in designing and prototyping web and mobile software that is informed by educational research to facilitate teaching and learning in productive and innovative ways.</p>
+			  		</li>
+			  		<li>
+			  			<h3>Anna Ly</h3>
+			  		</li>
+			  	</ul>
+			  </li>
+			</ul>
+		</div>
+
+		<!-- <div class="row">
+			<div class="ten columns centered">
 				<nav class="row">
-					<cms:editable name='home_nav' type='richtext'>
 					<ul>
 						<li class="four columns"><a href="#"><span>Games</span></a></li>
 						<li class="four columns"><a href="#"><span>About</span></a></li>
 						<li class="four columns"><a href="#"><span>Process</span></a></li>
 					</ul>
-					</cms:editable>
 				</nav>
 			</div>
+		</div> -->
+		<div class="row">
+			<footer>
+			<p>Copyright &copy;2012 Me.Mu</p>
+			</footer>
 		</div>
-
-		<!--<div class="row">
-			<div class="eight columns">
-				<h3>Tabs</h3>
-				<dl class="tabs">
-					<dd><a href="#simple1" class="active">Simple Tab 1</a></dd>
-					<dd><a href="#simple2">Simple Tab 2</a></dd>
-					<dd><a href="#simple3">Simple Tab 3</a></dd>
-				</dl>
-
-				<ul class="tabs-content">
-					<li class="active" id="simple1Tab">This is simple tab 1's content. Pretty neat, huh?</li>
-					<li id="simple2Tab">This is simple tab 2's content. Now you see it!</li>
-					<li id="simple3Tab">This is simple tab 3's content. It's, you know...okay.</li>
-				</ul>
-
-				<h3>Buttons</h3>
-				
-				<div class="row">
-					<div class="six columns">
-						<p><a href="#" class="small blue button">Small Blue Button</a></p>
-						<p><a href="#" class="blue button">Medium Blue Button</a></p>
-						<p><a href="#" class="large blue button">Large Blue Button</a></p>
 		
-						<p><a href="#" class="nice radius small blue button">Nice Blue Button</a></p>
-						<p><a href="#" class="nice radius blue button">Nice Blue Button</a></p>
-						<p><a href="#" class="nice radius large blue button">Nice Blue Button</a></p>
-					</div>
-					<div class="six columns">
-						<p><a href="#" class="small red button">Small Red Button</a></p>
-						<p><a href="#" class="green button">Medium Green Button</a></p>
-						<p><a href="#" class="large white button">Large White Button</a></p>
-		
-						<p><a href="#" class="nice radius small red button">Nice Red Button</a></p>
-						<p><a href="#" class="nice radius green button">Nice Green Button</a></p>
-						<p><a href="#" class="nice radius large white button">Nice White Button</a></p>
-					</div>
-				</div>
-			</div>
-
-			<div class="four columns">			
-				<h4>Getting Started</h4>
-				<p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-
-				<h4>Other Resources</h4>
-				<p>Once you've exhausted the fun in this document, you should check out:</p>
-				<ul class="disc">
-					<li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-					<li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-					<li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
-				</ul>
-			</div>
-		</div>-->
-
 	</div>
 	<!-- container -->
 
-
-
+	<!-- modal -->
+	<div class="reveal-modal" id="video-modal">
+		<div class="flex-video widescreen">
+			<iframe width="560" height="315" src="http://www.youtube.com/embed/OzAzSYp_7rc" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
 
 	<!-- Included JS Files -->
 	<script src="javascripts/jquery.min.js"></script>
-	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/foundation.min.js"></script>
+	<script src="javascripts/fancybox2/jquery.fancybox.js"></script>
 	<script src="javascripts/app.js"></script>
+	</script>
 
 </body>
 </html>

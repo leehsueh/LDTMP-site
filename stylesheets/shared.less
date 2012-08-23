@@ -118,6 +118,12 @@
 	-o-transform: scale(@x, @y);
 }
 
+.border-radius(@radii) {
+    -webkit-border-radius:@radii;
+    -moz-border-radius:@radii;
+    border-radius:@radii;
+}
+
 .rotateAndScale(@deg:-2deg, @x:1, @y:1) {
 	transform: scale(@x, @y) rotate(@deg);
 	-webkit-transform: scale(@x, @y) rotate(@deg);
@@ -130,6 +136,9 @@
 @memuPink: #f27fb2;
 @memuBabyBlue: #cbecff;
 
+body {
+	background: url('../images/emotionary/cross_line_texture_tile.png') repeat;
+}
 .memu-text {
 	font-family: SnigletRegular;
 	color: @memuGreen;
@@ -145,13 +154,6 @@ header {
 		font-weight:normal;
 		text-align: right;
 		z-index:2;
-	}
-	img.logo {
-		position: absolute;
-		display: block;
-		width:25%;
-		left: -6%;
-		z-index:-1;
 	}
 	&::after{ content: "."; display: block; height: 0; font-size:0; clear: both; visibility:hidden; }
 
@@ -215,4 +217,9 @@ blockquote {
 	p {
 		line-height:1.6em;
 	}
+}
+
+footer {
+	margin-top: 100px;
+	text-align: center;
 }
