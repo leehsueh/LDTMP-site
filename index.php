@@ -76,7 +76,7 @@
 			  <li class="active" id="storyTab">
 			  	<p><strong>Me.Mu</strong> is a project whose aim is to develop innovative solutions to facilitate <strong>socio-emotional development</strong> in individuals with <strong>autism and similar mental disorders</strong>.</p>
 				<p>Currently the project consists of two products designed to be used in a therapy setting - <a href="kinect/">one for the Kinect</a>, and <a href="emotionary/">another for the iPad</a>.</p>
-			  	<p>This project grew out of Stanford University's <a href="http://ldt.stanford.edu" target="_blank">Learning, Design, and Technology program</a> in the School of Education. <a class="fancybox fancybox.iframe" href="http://www.youtube.com/embed/OzAzSYp_7rc?autoplay=1">Watch our video</a> that describes our design process and approach. If you're interested in more details, you can read our <a href="files/ldtmp_report.pdf">master's project report</a>.</p>
+			  	<p>This project grew out of Stanford University's <a href="http://ldt.stanford.edu" target="_blank">Learning, Design, and Technology program</a> in the School of Education. <a class="fancybox-media" href="http://vimeo.com/48105631/">Watch our video</a> that describes our design process and approach. If you're interested in more details, you can read our <a href="files/ldtmp_report.pdf">master's project report</a>.</p>
 			  </li>
 			  <li id="acknowledgementsTab">
 			  	<p>This project would not have been possible without the following.</p>
@@ -157,6 +157,7 @@
 	<script src="javascripts/jquery.min.js"></script>
 	<script src="javascripts/foundation.min.js"></script>
 	<script src="javascripts/fancybox2/jquery.fancybox.js"></script>
+	<script src="javascripts/fancybox2/helpers/jquery.fancybox-media.js"></script>
 	<script src="javascripts/app.js"></script>
 	</script>
 
