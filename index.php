@@ -66,6 +66,11 @@
 				</div></a>
 			</div>
 		</div>
+		<div class="row">
+			<div class="six columns centered">
+				<a class="fancybox-media large success radius button" id="watch-video-link" href="http://vimeo.com/48105631/">Watch Our Video</a>
+			</div>
+		</div>
 		<div class="row faded-panel tabs-container">
 			<dl class="tabs contained">
 			  <dd class="active"><a href="#story">About Me.Mu</a></dd>
@@ -76,7 +81,7 @@
 			  <li class="active" id="storyTab">
 			  	<cms:editable name='about_memu' type='richtext'>
 			  	<p><strong>Me.Mu</strong> is a project whose aim is to develop innovative solutions to facilitate <strong>socio-emotional development</strong> in individuals with <strong>autism and similar mental disorders</strong>.</p>
-				<p>Currently the project consists of two products designed to be used in a therapy setting - <a href="kinect/">one for the Kinect</a>, and <a href="emotionary/">another for the iPad</a>.</p>
+				<p>Currently the project consists of two products designed to be used in a therapy setting - one for the Kinect, and another for the iPad.</p>
 			  	<p>This project grew out of Stanford University's <a href="http://ldt.stanford.edu" target="_blank">Learning, Design, and Technology program</a> in the School of Education. <a class="fancybox-media" href="http://vimeo.com/48105631/">Watch our video</a> that describes our design process and approach. If you're interested in more details, you can read our <a href="files/ldtmp_report.pdf">master's project report</a>.</p>
 			    </cms:editable>
 			  </li>
