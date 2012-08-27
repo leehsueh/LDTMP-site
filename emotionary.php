@@ -1,4 +1,5 @@
 <?php require_once( 'couch/cms.php' ); ?>
+<cms:template title='Emotionary' />
 <!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
@@ -41,9 +42,9 @@
 			<div class="ten columns centered">
 				<header>
 					<img id="smiley" src="images/SmileyFace.png" alt="Me.Mu">
-					<p id="memu-text"><a href="index.php">Me<span>.</span>Mu</a></p>
+					<p id="memu-text"><a href="<cms:link masterpage='index.php' />">Me<span>.</span>Mu</a></p>
 					<p id="introduces-text">introduces...</p>
-					<img src="images/emotionary/emotionarybanner.png" alt="emotionary">
+					<img id="emotionary-banner" src="images/emotionary/emotionarybanner.png" alt="emotionary">
 
 				</header>
 				
@@ -55,7 +56,7 @@
 				<p>Emotionary by Me.Mu is an emotion diary tool for iPad. It's designed for therapists to help children and adolescents with autism or similar mental disorders understand emotions in the context of their own lives.</p>
 			</div>
 		</div>
-
+		<?php require_once("footer.php"); ?>
 	</div>
 	<!-- container -->
 

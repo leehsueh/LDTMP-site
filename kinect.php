@@ -1,4 +1,5 @@
 <?php require_once( 'couch/cms.php' ); ?>
+<cms:template title='Me.Mu Kinect' />
 <!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
@@ -39,25 +40,64 @@
 	<div class="container">
 		<div class="row banner">
 			<div class="twelve columns">
-				<h1 class="memu-text"><a href="index.php">Me<span>.</span>Mu</a></h1>
+				<h1 class="memu-text"><a href="<cms:link masterpage='index.php' />">Me<span>.</span>Mu</a></h1>
 			</div>
 		</div>
 		<div class="row">
-			<div class="three columns">
-				<p><strong>Under Construction!</strong></p>
-				<p>Me.Mu for Kinect for Windows is a pair of mini-games to help children with autism practice social skills while developing general motor coordination.</p>
-			</div>
-			<div class="nine columns">
+			<div class="twelve columns">
 				<div class="flex-video widescreen vimeo">
 					<iframe src="http://player.vimeo.com/video/48102302" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/48102302">Me.Mu for Kinect for Windows</a> from <a href="http://vimeo.com/user11570905">Hain-Lee Hsueh</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 				</div>
 			</div>
 		</div>
-
+		<div class="row">
+			<div class="eight columns">
+				<cms:editable name='memu_description' type='richtext'>
+				<h3>Under Construction</h3>
+				<p>Me.Mu for Kinect for Windows is a pair of mini-games to help children with autism practice social skills while developing general motor coordination.</p>
+				</cms:editable>
+			</div>
+			<div class="four columns">
+				<h3>Download Me.Mu</h3>
+				<p><button class="nice large primary button disabled" disabled="disabled">Download Coming Soon</button></p>
+				<ul class="link-list">
+					<li><a href="#" data-reveal-id="requirements-modal">Requirements</a></p></li>
+					<li><a href="#" data-reveal-id="instructions-modal">Setup Instructions</a></li>
+			</div>
+		</div>
+		<?php require_once("footer.php"); ?>
 	</div>
 	<!-- container -->
 
-
+	<!-- modal dialog -->
+	<div class="reveal-modal" id="requirements-modal">
+		<cms:editable name='requirements' type='richtext'>
+		<h3 class="subheader">Requirements</h3>
+		<ul>
+			<li>A Microsoft <a href="http://www.microsoft.com/en-us/kinectforwindows/purchase/" target="_blank" title="Purchase Kinect for Windows">Kinect for Windows sensor</a> (Note: an XBox Kinect sensor is not compatible. Ask Microsoft why)</li>
+			<li>Windows machine running Windows 7 or later</li>
+			<li><a href="http://www.microsoft.com/en-us/kinectforwindows/develop/developer-downloads.aspx" target="_blank">Kinect for Windows SDK</a> v1.0 or later installed</li>
+			<li>A large display (projector setup may be ideal for groups)</li>
+			<li>A large enough space</li>
+		</ul>
+		</cms:editable>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	<div class="reveal-modal" id="instructions-modal">
+		<cms:editable name='instructions' type='richtext'>
+		<h3 class="subheader">Instructions</h3>
+		<ol>
+			<li>Make sure you have all the <a href="#" data-reveal-id="requirements-modal">requirements</a> met</li>
+			<li>Download the zip file to your Windows computer</li>
+			<li>Extract the contents to a desired location; there should be a .exe file and one other folder</li>
+			<li>Plug in your Kinect for Windows sensor via USB; make sure you plug in the power adapter too</li>
+			<li>Double-click the .exe file to launch the application</li>
+			<li>On the dialog that comes up, select a screen size and quality level, depending on how fast your machine is; the defaults should be fine</li>
+			<li>After the application finishes loading, the main menu should be displayed</li>
+		</ol>
+		</cms:editable>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
 
 
 	<!-- Included JS Files -->

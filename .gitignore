@@ -1,4 +1,6 @@
 .DS_Store
+*.sublime-workspace
+*.sublime-project
 php54.cgi
 couch/*
 .htaccess

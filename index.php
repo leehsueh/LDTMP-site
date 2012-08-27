@@ -54,31 +54,34 @@
 		</div>
 		<div class="row">
 			<div class="six columns">
-				<a href="kinect.php"><div class="product-container" id="memu-kinect-container">
+				<a href="<cms:link masterpage='kinect.php' />"><div class="product-container" id="memu-kinect-container">
 					<img src="images/memu_1big.png" alt="Me.Mu for Kinect">
-					<p>A pair of mini-games using Kinect&trade; for Windows</p>
+					<p><cms:editable name='memu_description' type='text'>A pair of mini-games using Kinect&trade; for Windows</cms:editable></p>
 				</div></a>
 			</div>
 			<div class="six columns">
-				<a href="emotionary.php"><div class="product-container" id="emotionary-container">
+				<a href="<cms:link masterpage='emotionary.php' />"><div class="product-container" id="emotionary-container">
 					<img src="images/emotionary/emotionarybanner.png" alt="Emotionary for iPad">
-					<p>An emotion diary iPad app</p>
+					<p><cms:editable name='emotionary_description' type='text'>An emotion diary iPad app</cms:editable></p>
 				</div></a>
 			</div>
 		</div>
 		<div class="row faded-panel tabs-container">
 			<dl class="tabs contained">
-			  <dd class="active"><a href="#story">Our Story</a></dd>
+			  <dd class="active"><a href="#story">About Me.Mu</a></dd>
 			  <dd><a href="#acknowledgements">Acknowledgments</a></dd>
 			  <dd><a href="#team">Team</a></dd>
 			</dl>
 			<ul class="tabs-content contained">
 			  <li class="active" id="storyTab">
+			  	<cms:editable name='about_memu' type='richtext'>
 			  	<p><strong>Me.Mu</strong> is a project whose aim is to develop innovative solutions to facilitate <strong>socio-emotional development</strong> in individuals with <strong>autism and similar mental disorders</strong>.</p>
 				<p>Currently the project consists of two products designed to be used in a therapy setting - <a href="kinect/">one for the Kinect</a>, and <a href="emotionary/">another for the iPad</a>.</p>
 			  	<p>This project grew out of Stanford University's <a href="http://ldt.stanford.edu" target="_blank">Learning, Design, and Technology program</a> in the School of Education. <a class="fancybox-media" href="http://vimeo.com/48105631/">Watch our video</a> that describes our design process and approach. If you're interested in more details, you can read our <a href="files/ldtmp_report.pdf">master's project report</a>.</p>
+			    </cms:editable>
 			  </li>
 			  <li id="acknowledgementsTab">
+			  	<cms:editable name='acknowledgments' type='richtext'>
 			  	<p>This project would not have been possible without the following.</p>
 			  	<ul>
 			  		<li><strong>Olivia Krakower</strong>, <strong>Silvia Pinto</strong>, <strong>Kurt Ohlfs</strong>, and <strong>Beth Harmon</strong> at the <a href="http://pacificautism.org" target="_blank">Pacific Autism Center for Education (PACE)</a></li>
@@ -91,33 +94,41 @@
 			  		<li>Our LDT faculty advisors <strong>Daniel Schwartz</strong>, <strong>John Willinsky</strong>, and <strong>Paulo Blikstein</strong></li>
 			  		<li><strong>Karin Forssell</strong> and the <a href="http://ldt.stanford.edu" target="_blank">LDT Program</a>!</li>
 			  	</ul>
+			  	</cms:editable>
 			  </li>
 			  <li id="teamTab">
 			  	<ul id="team-list">
 			  		<li>
+			  			<cms:editable name='hainlee_info' label='Hain-Lee' type='group' />
 			  			<div class="img-container">
 			  				<img src="images/hainlee.jpg" alt="Hain-Lee Hsueh">
 			  			</div>
 			  			<div class="team-info">
-			  				<h3>Hain-Lee Hsueh</h3>
-			  				<p class="team-title">UX Designer and Software Engineer</p>
+							
+			  				<h3><cms:editable name='hainlee_name' type='text' group='hainlee_info'>Hain-Lee Hsueh</cms:editable></h3>
+			  				<p class="team-title"><cms:editable name='hainlee_title' type='text' group='hainlee_info'>UX Designer and Software Engineer</cms:editable></p>
+			  				<cms:editable name='hainlee_links' type='richtext' group='hainlee_info'>
 			  				<ul class="link-list">
 			  					<li><a href="http://leehsueh.com">Website</a></li>
 			  					<li><a href="http://www.linkedin.com/in/leehsueh">LinkedIn</a></li>
 			  				</ul>
+			  				</cms:editable>
 			  			</div>
 			  		</li>
 			  		<li>
+			  			<cms:editable name='anna_info' label='Anna' type='group' />
 			  			<div class="img-container">
-			  				<img src="images/anna.jpg" alt="Hain-Lee Hsueh">
+			  				<img src="images/anna.jpg" alt="Anna Ly">
 			  			</div>
 			  			<div class="team-info">
-			  				<h3>Anna Ly</h3>
-			  				<p class="team-title">UX and Visual Designer</p>
+			  				<h3><cms:editable name='anna_name' type='text' group='anna_info'>Anna Ly</cms:editable></h3>
+			  				<p class="team-title"><cms:editable name='anna_title' type='text' group='anna_info'>UX and Visual Designer</cms:editable></p>
+			  				<cms:editable name='anna_links' type='richtext' group='anna_info'>
 			  				<ul class="link-list">
 			  					<li><a href="http://otterdotter.tumblr.com">Website</a></li>
 			  					<li><a href="http://www.linkedin.com/pub/anna-ly/1/284/856">LinkedIn</a></li>
 			  				</ul>
+			  				</cms:editable>
 			  			</div>
 			  		</li>
 			  	</ul>
@@ -136,22 +147,10 @@
 				</nav>
 			</div>
 		</div> -->
-		<div class="row">
-			<footer>
-			<p>Copyright &copy;2012 Me.Mu</p>
-			</footer>
-		</div>
+		<?php require_once("footer.php"); ?>
 		
 	</div>
 	<!-- container -->
-
-	<!-- modal -->
-	<div class="reveal-modal" id="video-modal">
-		<div class="flex-video widescreen">
-			<iframe width="560" height="315" src="http://www.youtube.com/embed/OzAzSYp_7rc" frameborder="0" allowfullscreen></iframe>
-		</div>
-		<a class="close-reveal-modal">&#215;</a>
-	</div>
 
 	<!-- Included JS Files -->
 	<script src="javascripts/jquery.min.js"></script>
