@@ -18,8 +18,9 @@
 	<!-- Included CSS Files -->
 	<link rel="stylesheet" href="stylesheets/foundation.min.css">
 	<link rel="stylesheet" href="stylesheets/emotionary.css">
-	<!-- <link rel="stylesheet/less" type="text/css" href="stylesheets/app.less"> -->
-
+	<!-- fancybox -->
+	<link rel="stylesheet" href="javascripts/fancybox2/jquery.fancybox.css?v=2.1.0" type="text/css" media="screen" />
+	<link rel="stylesheet" href="javascripts/fancybox2/helpers/jquery.fancybox-thumbs.css?v=2.1.0" type="text/css" media="screen" />
 
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" href="stylesheets/ie.css">
@@ -45,15 +46,25 @@
 					<p id="memu-text"><a href="<cms:link masterpage='index.php' />">Me<span>.</span>Mu</a></p>
 					<p id="introduces-text">introduces...</p>
 					<img id="emotionary-banner" src="images/emotionary/emotionarybanner.png" alt="emotionary">
-
 				</header>
-				
+				<div id="screenshot-gallery">
+					<ul class="link-list">
+						<li><a href="images/emotionary/screenshots/home_screen.jpg" class="fancybox-thumbs" data-fancybox-group="screenshots" title="The home screen presents two main options - creating an entry and viewing entries."><img src="images/emotionary/screenshots/home_screen.jpg" alt="Home screen"></a></li>
+						<li><a href="images/emotionary/screenshots/select_student.jpg" class="fancybox-thumbs" data-fancybox-group="screenshots" title="Select which student you'll be working with."><img src="images/emotionary/screenshots/select_student.jpg" alt=""></a></li>
+						<li><a href="images/emotionary/screenshots/entry_step1.jpg" class="fancybox-thumbs" data-fancybox-group="screenshots" title="First the student chooses how he/she is feeling"><img src="images/emotionary/screenshots/entry_step1.jpg" alt=""></a></li>
+						<li><a href="images/emotionary/screenshots/entry_step2_audio.jpg" class="fancybox-thumbs" data-fancybox-group="screenshots" title="The student practices expressing why they feel a certain emotion."><img src="images/emotionary/screenshots/entry_step2_audio.jpg" alt=""></a></li>
+						<li><a href="images/emotionary/screenshots/entry_step2_type.jpg" class="fancybox-thumbs" data-fancybox-group="screenshots" title="If a student is nonverbal, he/she can type a response."><img src="images/emotionary/screenshots/entry_step2_type.jpg" alt=""></a></li>
+						<li><a href="images/emotionary/screenshots/edit_student.jpg" class="fancybox-thumbs" data-fancybox-group="screenshots" title="Adding or editing a student."><img src="images/emotionary/screenshots/edit_student.jpg" alt=""></a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="ten columns centered">
 				<p id="coming-soon-text">Coming soon!</p>
+				<cms:editable name='placeholder_content' type='richtext'>
 				<p>Emotionary by Me.Mu is an emotion diary tool for iPad. It's designed for therapists to help children and adolescents with autism or similar mental disorders understand emotions in the context of their own lives.</p>
+				</cms:editable>
 			</div>
 		</div>
 		<?php require_once("footer.php"); ?>
@@ -66,6 +77,8 @@
 	<!-- Included JS Files -->
 	<script src="javascripts/jquery.min.js"></script>
 	<script src="javascripts/foundation.min.js"></script>
+	<script src="javascripts/fancybox2/jquery.fancybox.js"></script>
+	<script src="javascripts/fancybox2/helpers/jquery.fancybox-thumbs.js"></script>
 	<script src="javascripts/app.js"></script>
 
 </body>

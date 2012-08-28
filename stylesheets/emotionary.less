@@ -1,8 +1,5 @@
 @import 'shared';
 
-body {
-	background: lighten(@emotionaryGreen, 5) url('../images/emotionary/cross_line_texture_tile.png') repeat;
-}
 #smiley {
 	width: 85px;
 	position: absolute;
@@ -33,6 +30,28 @@ img#emotionary-banner {
 	font-size: 3em;
 	text-align: center;
 	font-weight: lighter;
+}
+#screenshot-gallery {
+	img {
+		width: 100px;
+	}
+}
+.fancybox-title.fancybox-title-inside-wrap {
+	font-size: 1em;
+}
+#fancybox-thumbs {
+	img {
+		width: 100px;
+	}
+	li {
+		list-style-type: none;
+		margin: 2px;
+	}
+	&.bottom {
+		background-color: rgba(0, 0, 0, 0.5);
+		padding: 7px;
+		z-index: 99999;
+	}
 }
 
 p {

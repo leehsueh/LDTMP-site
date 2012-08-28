@@ -51,18 +51,23 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="eight columns">
-				<cms:editable name='memu_description' type='richtext'>
-				<h3>Under Construction</h3>
-				<p>Me.Mu for Kinect for Windows is a pair of mini-games to help children with autism practice social skills while developing general motor coordination.</p>
-				</cms:editable>
+			<div class="seven columns">
+				<div class="faded-panel">
+					<cms:editable name='memu_description' type='richtext'>
+					<h3>Under Construction</h3>
+					<p>Me.Mu for Kinect for Windows is a pair of mini-games to help children with autism practice social skills while developing general motor coordination.</p>
+					</cms:editable>
+				</div>
 			</div>
-			<div class="four columns">
-				<h3>Download Me.Mu</h3>
-				<p><button class="nice large primary button disabled" disabled="disabled">Download Coming Soon</button></p>
-				<ul class="link-list">
-					<li><a href="#" data-reveal-id="requirements-modal">Requirements</a></p></li>
-					<li><a href="#" data-reveal-id="instructions-modal">Setup Instructions</a></li>
+			<div class="five columns">
+				<div class="faded-panel">
+					<h3>Get Me.Mu</h3>
+					<p><button class="nice large primary button disabled" disabled="disabled">Download Coming Soon</button></p>
+					<ul id="download-instructions" class="link-list">
+						<li><a href="#" data-reveal-id="requirements-modal">Requirements</a></p></li>
+						<li><a href="#" data-reveal-id="instructions-modal">Setup Instructions</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<?php require_once("footer.php"); ?>

@@ -30,5 +30,24 @@ jQuery(document).ready(function ($) {
 			media : {}
 		}
 	});
+
+    $('.fancybox-thumbs').fancybox({
+        prevEffect : 'elastic',
+        nextEffect : 'elastic',
+
+        closeBtn  : true,
+        arrows    : true,
+        nextClick : true,
+
+        helpers : {
+            thumbs : {
+                width  : 80,
+                // height : 50
+            },
+            title: {
+                type: 'inside'
+            }
+        }
+    });
   
 });
