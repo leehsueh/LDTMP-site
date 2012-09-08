@@ -17,7 +17,7 @@
    // 1.
    // If neccesary, define the full URL of your site including the subdomain, if any.
    // V.IMP: Don't forget the trailing slash!
-   //define( 'K_SITE_URL', 'http://www.test.com/subfolder1/subfolder2/mysite/' ); 
+   // define( 'K_SITE_URL', 'http://localhost:8888/memu-site/' ); 
 
    // 1b.
    // For security purpose, the 'index.php' file of Couch can be renamed to anything else.
@@ -63,7 +63,7 @@
    // 8.
    // Set the following to '1' if you wish to enable Pretty URLS.
    // After enabling it, use gen_htaccess.php to generate an .htaccess file and place it in the root folder of your site.
-   define( 'K_PRETTY_URLS', 0);
+    define( 'K_PRETTY_URLS', 0);
 
    // 9.
    // If set, CMS will cache generated pages and serve them if possible.

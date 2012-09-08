@@ -22,6 +22,7 @@ jQuery(document).ready(function ($) {
     
     
     $(document).foundationTabs({callback:$.foundation.customForms.appendCustomMarkup});
+    $("#orbit-container").orbit();
 
     $(".fancybox-media").fancybox({
 		openEffect  : 'none',

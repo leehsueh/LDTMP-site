@@ -38,11 +38,7 @@
 
 	<!-- container -->
 	<div class="container">
-		<div class="row banner">
-			<div class="twelve columns">
-				<h1 class="memu-text"><a href="<cms:link masterpage='index.php' />">Me<span>.</span>Mu</a></h1>
-			</div>
-		</div>
+		<?php require_once('header.php'); ?>
 		<div class="row">
 			<div class="twelve columns">
 				<div class="flex-video widescreen vimeo">

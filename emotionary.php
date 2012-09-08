@@ -39,14 +39,16 @@
 
 	<!-- container -->
 	<div class="container">
+		<?php require_once('header.php'); ?>
 		<div class="row banner">
-			<div class="ten columns centered">
-				<header>
+			<div class="twelve columns centered">
+				<!-- <header>
 					<img id="smiley" src="images/SmileyFace.png" alt="Me.Mu">
 					<p id="memu-text"><a href="<cms:link masterpage='index.php' />">Me<span>.</span>Mu</a></p>
 					<p id="introduces-text">introduces...</p>
 					<img id="emotionary-banner" src="images/emotionary/emotionarybanner.png" alt="emotionary">
-				</header>
+				</header> -->
+				<p><img id="emotionary-banner" src="images/emotionary/emotionarybanner.png" alt="emotionary"></p>
 				<div id="screenshot-gallery">
 					<ul class="link-list">
 						<li><a href="images/emotionary/screenshots/home_screen.jpg" class="fancybox-thumbs" data-fancybox-group="screenshots" title="The home screen presents two main options - creating an entry and viewing entries."><img src="images/emotionary/screenshots/home_screen.jpg" alt="Home screen"></a></li>
@@ -59,11 +61,17 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="ten columns centered">
-				<p id="coming-soon-text">Coming soon!</p>
+		<div class="row faded-panel">
+			<div class="three columns">
+				<p><a href="http://itunes.apple.com/us/app/emotionary-by-me.mu/id555381720?ls=1&mt=8"><img src="images/app_store_badge_250px.png" alt="Download from the app store"></a></p>
+				<ul class="link-list">
+					<li>iPad only</li>
+					<li>iOS 5.0+</li>
+				</ul>
+			</div>
+			<div class="nine columns">
 				<cms:editable name='placeholder_content' type='richtext'>
-				<p>Emotionary by Me.Mu is an emotion diary tool for iPad. It's designed for therapists to help children and adolescents with autism or similar mental disorders understand emotions in the context of their own lives.</p>
+				<p><strong>Emotionary by Me.Mu</strong> is an emotion diary tool for iPad. It's designed for therapists to help children and adolescents with autism or similar mental disorders understand emotions in the context of their own lives.</p>
 				</cms:editable>
 			</div>
 		</div>

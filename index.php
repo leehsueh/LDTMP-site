@@ -43,15 +43,7 @@
 
 	<!-- container -->
 	<div class="container">
-		<div class="row banner">
-			<header class="twelve columns centered">
-				<div class="six columns memu-banner">
-					<img class="logo" src="images/SmileyFace.png" alt="Me.Mu">
-					<h1>Me<span>.</span>Mu</h1>
-				</div>
-				<div class="six columns"><p><cms:editable name='tagline' type='text'>socio-emotional learning through playful movement</cms:editable></p></div>
-			</header>
-		</div>
+		<?php require_once('header.php'); ?>
 		<div class="row">
 			<div class="six columns">
 				<a href="<cms:link masterpage='kinect.php' />"><div class="product-container" id="memu-kinect-container">
@@ -68,10 +60,133 @@
 		</div>
 		<div class="row">
 			<div class="six columns centered">
-				<a class="fancybox-media large success radius button" id="watch-video-link" href="http://vimeo.com/48105631/">Watch Our Video</a>
+				<a class="fancybox-media" id="watch-video-link" href="http://vimeo.com/48105631/">Watch Our Video</a>
 			</div>
 		</div>
-		<div class="row faded-panel tabs-container">
+		<!-- <div class="row">
+			<div class="twelve columns">
+				<div class="orbit-item" id="about-container">
+					<h3 class="cloud-header red">About Me.Mu</h3>
+					<h4>About Me.Mu</h4>
+					<cms:editable name='about_memu' type='richtext'>
+				  	<p><strong>Me.Mu</strong> is a project whose aim is to develop innovative solutions to facilitate <strong>socio-emotional development</strong> in individuals with <strong>autism and similar mental disorders</strong>.</p>
+					<p>Currently the project consists of two products designed to be used in a therapy setting - one for the Kinect, and another for the iPad.</p>
+				  	<p>This project grew out of Stanford University's <a href="http://ldt.stanford.edu" target="_blank">Learning, Design, and Technology program</a> in the School of Education. <a class="fancybox-media" href="http://vimeo.com/48105631/">Watch our video</a> that describes our design process and approach. If you're interested in more details, you can read our <a href="files/ldtmp_report.pdf">master's project report</a>.</p>
+				    </cms:editable>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<div class="orbit-item" id="thanks-container">
+					<h3 class="cloud-header green">Acknowledgments</h3>
+					<h4>Thanks</h4>
+				  	<p>This project would not have been possible without the following.</p>
+				  	<ul>
+				  		<li>
+				  			<h6>Olivia Krakower</h6>
+				  			<p><a href="http://pacificautism.org" target="_blank">Pacific Autism Center for Education (PACE)</a></p>
+				  		</li>
+				  		<li>
+				  			<h6>Silvia Pinto</h6>
+				  			<p><a href="http://pacificautism.org" target="_blank">Pacific Autism Center for Education (PACE)</a></p>
+				  		</li>
+				  		<li>
+				  			<h6>Kurt Ohlfs</h6>
+				  			<p><a href="http://pacificautism.org" target="_blank">Pacific Autism Center for Education (PACE)</a></p>
+				  		</li>
+				  		<li>
+				  			<h6>Beth Harmon</h6>
+				  			<p><a href="http://harmonyinautism.com/">Harmony Autism</a></p>
+				  		</li>
+				  		<li>
+				  			<h6>Michelle Fong</h6>
+				  			<p><a href="http://allsinc.com" target="_blank">Associated Learning and Language Specialists (ALLSINC)</a></p>
+				  		</li>
+				  		<li><h6>Rebecca Berry</h6>
+				  			<p><a href="http://developmentalpathways.com" target="_blank">Developmental Pathways for Kids (DPK)</a>
+				  			</p>
+				  		</li>
+				  		<li><h6>Diana Smith</h6>
+				  			<p><a href="http://developmentalpathways.com" target="_blank">Developmental Pathways for Kids (DPK)</a>
+				  			</p>
+				  		</li>
+				  		<li><h6>Camille Castillo Leach</h6>
+				  			<p><a href="http://developmentalpathways.com" target="_blank">Developmental Pathways for Kids (DPK)</a>
+				  			</p>
+				  		</li>
+				  		<li><h6>Mr. Reece Duca</h6>
+				  			<p>For generous financial support.</p>
+				  		</li>
+				  		<li>
+				  			<h6>Wendy MacKay</h6>
+				  			<p>CS377I Professor</p>
+				  		</li>
+				  		<li><h6>David Jaffe</h6>
+				  			<p>ENGR210 Professor</p></li>
+				  		<li><h6>Daniel Schwartz</h6>
+				  			<p>LDT Advisor</p></li>
+				  		<li><h6>John Willinsky</h6>
+				  			<p>LDT Advisor</p></li>
+				  		<li><h6>Paulo Blikstein</h6>
+				  			<p>LDT Advisor</p></li>
+				  		<li><h6>Karin Forssell</h6>
+				  			<p>Director of the <a href="http://ldt.stanford.edu" target="_blank">LDT Program</a>!</p>
+				  		</li>
+				  		<li>All students who tested our project!</li>
+				  		<li><h6>Microsoft</h6>
+				  			<p>For hosting the Imagine Cup Kinect Fun Labs Challenge Competition</p>
+				  		</li>
+				  	</ul>
+				  	
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<div class="orbit-item" id="team-container">
+					<h3 class="cloud-header light-green">Team</h3>
+					<h4>Team</h4>
+					<ul id="team-list">
+				  		<li>
+				  			<cms:editable name='hainlee_info' label='Hain-Lee' type='group' />
+				  			<div class="img-container">
+				  				<img src="images/hainlee.jpg" alt="Hain-Lee Hsueh">
+				  			</div>
+				  			<div class="team-info">
+								
+				  				<h3><cms:editable name='hainlee_name' type='text' group='hainlee_info'>Hain-Lee Hsueh</cms:editable></h3>
+				  				<p class="team-title"><cms:editable name='hainlee_title' type='text' group='hainlee_info'>UX Designer and Software Engineer</cms:editable></p>
+				  				<cms:editable name='hainlee_links' type='richtext' group='hainlee_info'>
+				  				<ul class="link-list">
+				  					<li><a href="http://leehsueh.com">Website</a></li>
+				  					<li><a href="http://www.linkedin.com/in/leehsueh">LinkedIn</a></li>
+				  				</ul>
+				  				</cms:editable>
+				  			</div>
+				  		</li>
+				  		<li>
+				  			<cms:editable name='anna_info' label='Anna' type='group' />
+				  			<div class="img-container">
+				  				<img src="images/anna.jpg" alt="Anna Ly">
+				  			</div>
+				  			<div class="team-info">
+				  				<h3><cms:editable name='anna_name' type='text' group='anna_info'>Anna Ly</cms:editable></h3>
+				  				<p class="team-title"><cms:editable name='anna_title' type='text' group='anna_info'>UX and Visual Designer</cms:editable></p>
+				  				<cms:editable name='anna_links' type='richtext' group='anna_info'>
+				  				<ul class="link-list">
+				  					<li><a href="http://otterdotter.tumblr.com">Website</a></li>
+				  					<li><a href="http://www.linkedin.com/pub/anna-ly/1/284/856">LinkedIn</a></li>
+				  				</ul>
+				  				</cms:editable>
+				  			</div>
+				  		</li>
+				  	</ul>
+				</div>
+			</div>
+		</div> -->
+		
+		<!-- <div class="row faded-panel tabs-container">
 			<dl class="tabs contained">
 			  <dd class="active"><a href="#story">About Me.Mu</a></dd>
 			  <dd><a href="#acknowledgements">Acknowledgments</a></dd>
@@ -139,19 +254,8 @@
 			  	</ul>
 			  </li>
 			</ul>
-		</div>
-
-		<!-- <div class="row">
-			<div class="ten columns centered">
-				<nav class="row">
-					<ul>
-						<li class="four columns"><a href="#"><span>Games</span></a></li>
-						<li class="four columns"><a href="#"><span>About</span></a></li>
-						<li class="four columns"><a href="#"><span>Process</span></a></li>
-					</ul>
-				</nav>
-			</div>
 		</div> -->
+
 		<?php require_once("footer.php"); ?>
 		
 	</div>

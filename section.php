@@ -18,8 +18,7 @@
 	<title>Me.Mu - Socio-emotional Learning through Play and Reflection</title>
   
 	<!-- Included CSS Files -->
-	<link href="http://fonts.googleapis.com/css?family=Architects Daughter&subset=latin" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="stylesheets/foundation.css">
+	<link rel="stylesheet" href="stylesheets/foundation.min.css">
 	<!-- <link rel="stylesheet" href="stylesheets/app.css"> -->
 	<link rel="stylesheet" href="stylesheets/detail.css">
 	<!-- <link rel="stylesheet/less" type="text/css" href="stylesheets/app.less"> -->
@@ -39,12 +38,11 @@
 
 </head>
 <body>
-	<div class="fixed-bar">
+	<!-- <div class="fixed-bar">
 		<div class="header-container">
 		<header>
 			<h1><a href="index.php">Me<span>.</span>Mu</a></h1>
 			<img class="logo" src="images/SmileyFace.png" alt="Me.Mu">
-			<!-- <img src="images/memu_1big.png" alt=""> -->
 		</header>
 		<nav>
 			<ul>
@@ -55,26 +53,27 @@
 			</ul>
 		</nav>
 		</div>
-	</div>
+	</div> -->
 	<!-- container -->
-	<div class="container content-container">
+	<div class="container">
+		<?php require_once('header.php'); ?>
 		<div class="row">
-			<div class="ten columns centered">
-				<div class="row">
-					<div class="twelve columns">
-						<cms:do_shortcodes><cms:show section_content /></cms:do_shortcodes>
-					</div>
+			<div class="twelve columns">
+				<div class="orbit-item">
+					<cms:do_shortcodes><cms:show section_content /></cms:do_shortcodes>
 				</div>
 			</div>
 		</div>
-
+		<?php require_once("footer.php"); ?>
 	</div>
 	<!-- container -->
 
 
 	<!-- Included JS Files -->
 	<script src="javascripts/jquery.min.js"></script>
-	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/foundation.min.js"></script>
+	<script src="javascripts/fancybox2/jquery.fancybox.js"></script>
+	<script src="javascripts/fancybox2/helpers/jquery.fancybox-media.js"></script>
 	<script src="javascripts/app.js"></script>
 
 </body>

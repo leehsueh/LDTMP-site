@@ -14,58 +14,21 @@
    Typography/fonts
 ----------------------------------------- */
 @import 'shared';
+@import 'detail';
 
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
-@circleSizeNormal: 130px;
-@circleSizeHover: 140px;
-@navHeight: @circleSizeHover + 30;
-@circleOffsetTop: 0px;
-@circleOffsetLeft: 50px;
 
 .banner {
 	margin-top:50px;
-}
-header {
-	.memu-banner {
-		position: relative;
-		img.logo {
-			position: absolute;
-			display: block;
-			width:100px;
-			top: 0px;
-			left: -40px;
-		}
-		h1 {
-			font-size: 8em;
-			position: relative;
-			text-align: left;
-			padding-left: 20px;
-			span {
-				color: @memuPink;
-			}
-		}
-	}
-	
-	p {
-		font-family: 'DKHarimauRegular', sans-serif;
-		font-size: 2em;
-		text-align: right;
-		line-height:1.2;
-		margin-top: 40px;
-	}
-
-	
-	&::after{ content: "."; display: block; height: 0; font-size:0; clear: both; visibility:hidden; }
-
-	margin-bottom: 50px;
 }
 
 .product-container {
 	.faded-panel;
 	height: 300px;
 	margin-bottom: 50px;
+	color: @memuGray;
 	p {
 		margin-top: 20px;
 		font-size: 1.75em;
@@ -79,10 +42,25 @@ header {
 }
 #watch-video-link {
 	display: block;
-	width: 200px;
+	width: 266px;
+	height: 66px;
 	margin: 10px auto;
 	margin-bottom: 50px;
+	background: url('../images/watch_btn_unpressed.png') no-repeat;
+	border: 0;
+	font-family: 'Claire Hand';
+	font-weight: bold;
+	text-align: center;
+	padding: 18px;
+	color: white;
+	font-size: 1.2em;
+
+	&:hover {
+		padding-top: 25px;
+		background: url('../images/watch_btn_pressed.png') no-repeat;
+	}
 }
+
 .tabs-container {
 	dl.tabs.contained {
 		background-color: none;
@@ -98,25 +76,7 @@ header {
 	ul.tabs-content.contained {
 		background-color: white;
 
-		#team-list {
-			padding-left: 0;
-			li {
-				list-style-type: none;
-				display: block;
-				div.img-container, div.team-info {
-					float: left;
-				}
-				div.img-container {
-					width: 15%;
-					text-align: center;
-				}
-				div.team-info {
-					width: 80%;
-					margin-left: 5%;
-				}
-				&::after{ content: "."; display: block; height: 0; font-size:0; clear: both; visibility:hidden; }
-			}
-		}
+		
 	}
 
 	p, #acknowledgementsTab li {
@@ -136,40 +96,6 @@ header {
 		ul li {
 			list-style-type: dot;
 			list-style-position: outside;
-		}
-	}
-}
-
-
-
-
-nav {
-	height: @navHeight;
-	ul li {
-		position: relative;
-		height: @circleSizeHover;
-	}
-	ul li a {
-		position:absolute;
-		top:@circleOffsetTop;
-		left:@circleOffsetLeft;
-		width: @circleSizeNormal;
-		height: @circleSizeNormal;
-		border-radius:@circleSizeHover / 1.5;
-		font-size: 110%;
-		
-		&:hover {
-			// background: darken(@memuGreen, 0);			
-			width:@circleSizeHover;
-			height: @circleSizeHover;
-			top:@circleOffsetTop - (@circleSizeHover - @circleSizeNormal) / 2;
-			left:@circleOffsetLeft - (@circleSizeHover - @circleSizeNormal) / 2;
-			
-		}
-
-		span {
-			display:block;
-			padding: @circleSizeNormal / 2 - 15 0;
 		}
 	}
 }
