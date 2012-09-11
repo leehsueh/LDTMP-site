@@ -91,11 +91,11 @@
     background-size:@size;
 }
 .transition(@duration: 0.4s, @function: ease) {
-	-webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+	-webkit-transition: all @duration ease;
+    -moz-transition: all @duration ease;
+    -o-transition: all @duration ease;
+    -ms-transition: all @duration ease;
+    transition: all @duration ease;
 }
 
 .panel-shadow(@x:0, @y:2px, @amt: 5px, @color:rgba(0, 0, 0, 0.15)) {
@@ -139,6 +139,7 @@
 }
 
 @memuGreen: #86ca88;
+@memuDarkTeal: #9db6aa;
 @emotionaryGreen: #c6e4d4;
 @memuPink: #f27fb2;
 @memuBabyBlue: #cbecff;
@@ -213,7 +214,7 @@ body {
 				font-size: 1.5em;
 				text-align: center;
 				.border-radius(10px);
-				border: solid #9db6aa 3px;
+				border: solid @memuDarkTeal 3px;
 				background-color: white;
 				&:hover {
 					border-color: #aaa;
@@ -269,6 +270,34 @@ body {
 	.panel-shadow(0, 2px, 5px, rgba(0, 0, 0, 0.3));
 	background-color: rgba(255, 255, 255, 0.5);
 	padding: 40px;
+}
+
+.cloud-header {
+	position: absolute;
+	.background-size(100% 100%);
+	@cloudWidth: 217px;
+	@cloudHeight: 122px;
+	@x: 0.9;
+	width: @cloudWidth * @x;
+	height: @cloudHeight * @x;
+	top: -40px;
+	left: -40px;
+	.rotate(-15deg);
+	font-size: 1.4em;
+	font-family: 'DKHarimauRegular', sans-serif;
+	text-align: center;
+	padding-top: @cloudHeight * @x / 2.5;
+	background-image: url('../images/cloud_red.png');
+
+	&.red {
+		background-image: url('../images/cloud_red.png');
+	}
+	&.green {
+		background-image: url('../images/cloud_green.png');
+	}
+	&.light-green {
+		background-image: url('../images/cloud_lightgreen.png');
+	}
 }
 
 p, ul, ol {

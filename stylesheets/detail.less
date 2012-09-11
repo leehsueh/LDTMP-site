@@ -3,32 +3,6 @@
 .orbit-item {
 	.faded-panel;
 	padding-top: 85px;
-	.cloud-header {
-		position: absolute;
-		.background-size(100% 100%);
-		@cloudWidth: 217px;
-		@cloudHeight: 122px;
-		@x: 0.9;
-		width: @cloudWidth * @x;
-		height: @cloudHeight * @x;
-		top: -40px;
-		left: -40px;
-		.rotate(-15deg);
-		font-size: 1.4em;
-		font-family: 'DKHarimauRegular', sans-serif;
-		text-align: center;
-		padding-top: @cloudHeight * @x / 2.5;
-
-		&.red {
-			background-image: url('../images/cloud_red.png');
-		}
-		&.green {
-			background-image: url('../images/cloud_green.png');
-		}
-		&.light-green {
-			background-image: url('../images/cloud_lightgreen.png');
-		}
-	}
 }
 
 #team-list {

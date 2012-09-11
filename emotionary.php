@@ -63,7 +63,7 @@
 		</div>
 		<div class="row faded-panel">
 			<div class="three columns">
-				<p><a href="http://itunes.apple.com/us/app/emotionary-by-me.mu/id555381720?ls=1&mt=8"><img src="images/app_store_badge_250px.png" alt="Download from the app store"></a></p>
+				<p><a href="http://itunes.apple.com/us/app/emotionary-by-me.mu/id555381720?ls=1&amp;mt=8"><img src="images/app_store_badge_250px.png" alt="Download from the app store"></a></p>
 				<ul class="link-list">
 					<li>iPad only</li>
 					<li>iOS 5.0+</li>
@@ -72,6 +72,7 @@
 			<div class="nine columns">
 				<cms:editable name='placeholder_content' type='richtext'>
 				<p><strong>Emotionary by Me.Mu</strong> is an emotion diary tool for iPad. It's designed for therapists to help children and adolescents with autism or similar mental disorders understand emotions in the context of their own lives.</p>
+				<p><a class="nice button success" href="http://itunes.apple.com/us/app/emotionary-by-me.mu/id555381720?ls=1&amp;mt=8">Get the Free App</a></p>
 				</cms:editable>
 			</div>
 		</div>

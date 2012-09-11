@@ -36,22 +36,6 @@
 
 </head>
 <body>
-	<!-- <div class="fixed-bar">
-		<div class="header-container">
-		<header>
-			<h1><a href="index.php">Me<span>.</span>Mu</a></h1>
-			<img class="logo" src="images/SmileyFace.png" alt="Me.Mu">
-		</header>
-		<nav>
-			<ul>
-				<li><a <cms:if k_page_title == 'About'>class="active"</cms:if> href="section.php?p=2"><span>About</span></a></li>
-				<li><a <cms:if k_page_title == 'Games'>class="active"</cms:if> href="section.php?p=3"><span>Games</span></a></li>
-				<li><a <cms:if k_page_title == 'Process'>class="active"</cms:if> href="section.php?p=4"><span>Process</span></a></li>
-				<li><a <cms:if k_page_title == 'Team'>class="active"</cms:if> href="section.php?p=5"><span>Team</span></a></li>
-			</ul>
-		</nav>
-		</div>
-	</div> -->
 	<!-- container -->
 	<div class="container">
 		<?php require_once('header.php'); ?>

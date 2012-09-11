@@ -33,6 +33,9 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
+	<!-- fancybox -->
+	<link rel="stylesheet" href="javascripts/fancybox2/jquery.fancybox.css?v=2.1.0" type="text/css" media="screen" />
+
 </head>
 <body>
 
@@ -40,32 +43,118 @@
 	<div class="container">
 		<?php require_once('header.php'); ?>
 		<div class="row">
-			<div class="twelve columns">
-				<div class="flex-video widescreen vimeo">
-					<iframe src="http://player.vimeo.com/video/48102302" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/48102302">Me.Mu for Kinect for Windows</a> from <a href="http://vimeo.com/user11570905">Hain-Lee Hsueh</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
-				</div>
+			<div class="six columns">
+				<a class="fancybox-media" id="watch-video-link" href="http://vimeo.com/48102302/">
+					<img src="images/kinect/video1_thumb.png" alt="Me.Mu Kinect for Windows">
+				</a>
+				
 			</div>
-		</div>
-		<div class="row">
-			<div class="seven columns">
-				<div class="faded-panel">
-					<cms:editable name='memu_description' type='richtext'>
-					<h3>Under Construction</h3>
-					<p>Me.Mu for Kinect for Windows is a pair of mini-games to help children with autism practice social skills while developing general motor coordination.</p>
-					</cms:editable>
-				</div>
-			</div>
-			<div class="five columns">
-				<div class="faded-panel">
-					<h3>Get Me.Mu</h3>
+			<div class="six columns">
+				<div id="download-header">
 					<p><button class="nice large primary button disabled" disabled="disabled">Download Coming Soon</button></p>
-					<ul id="download-instructions" class="link-list">
+					<ul class="link-list" id="download-modals">
 						<li><a href="#" data-reveal-id="requirements-modal">Requirements</a></p></li>
 						<li><a href="#" data-reveal-id="instructions-modal">Setup Instructions</a></li>
 					</ul>
 				</div>
+				
+				<cms:editable name='memu_description' type='richtext'>
+				<p>
+					<strong>Me.Mu for Kinect for Windows</strong> is a pair of mini-games to help children with autism practice social skills while developing general motor coordination.
+				</p>
+				</cms:editable>
+				<ul class="link-list" id="game-links">
+					<li><a class="scroll-link" href="#falling-faces-bookmark">Falling Faces</a></li>
+					<li><a class="scroll-link" href="#hello-park-wrapper">Hello Park</a></li>
+				</ul>
+				
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="twelve columns">
+				<hr id="falling-faces-bookmark" style="visibility:hidden">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="twelve columns">
+				<div id="falling-faces-wrapper">
+					<h3 class="cloud-header">Falling Faces</h3>
+					<div id="falling-faces-orbit">
+						<cms:editable name='falling_faces_info' label='Falling Faces Orbit' type='group' />
+						<div class="game-orbit-item">
+							<p><a href="images/kinect/menu_ff.png" class="fancybox"><img src="images/kinect/menu_ff.png" alt="choosing one of the levels of Falling Faces from the main menu"></a></p>
+							<cms:editable type='richtext' name='falling_faces_1' group='falling_faces_info'>
+							<p>Falling Faces is a game consisting of three levels that introduces facial emotions. The desired learning outcome is for the player to pay more attention to facial expressions rather than fixate on other peripheral cues. It also aims to increase the processing speed for recognizing emotions.</p>
+							</cms:editable>
+						</div>
+						<div class="game-orbit-item">
+							<p><a href="images/kinect/ff_level1_prompt.png" class="fancybox"><img src="images/kinect/ff_level1_prompt.png" alt="Prompt to burst faces"></a>
+								<a href="images/kinect/ff_level1.png" class="fancybox"><img src="images/kinect/ff_level1.png" alt="First level of Falling Faces"></a></p>
+							<cms:editable type='richtext' name='falling_faces_2' group='falling_faces_info'>
+							<p>The core mechanic of this game entails choosing between two balls that fall from the sky. A choice is made by touching one of the balls with the avatar's body. In the first level, players learn to focus on general facial expressions by popping the balls with faces and ignoring the balls that are blank. </p>
+							</cms:editable>
+						</div>
+						<div class="game-orbit-item">
+							<p><a class="fancybox" href="images/kinect/ff_level23_prompt.png"><img src="images/kinect/ff_level23_prompt.png" alt="Prompt to burst a particular emotion"></a>
+								<a class="fancybox" href="images/kinect/ff_level2.png"><img src="images/kinect/ff_level2.png" alt="First level of Falling Faces"></a></p>
+							<cms:editable type='richtext' name='falling_faces_3' group='falling_faces_info'>
+							<p>In the second level of the game, the player is given a target emotion and must distinguish between two facial expressions. The target emotion is selected at random, and each emotion has three corresponding facial expressions of varying degree.</p>
+							</cms:editable>
+						</div>
+						<div class="game-orbit-item">
+							<p><a class="fancybox" href="images/kinect/ff_level3.png"><img src="images/kinect/ff_level3.png" alt="Distinguishing emotions with black and white faces"></a></p>
+							<cms:editable type='richtext' name='falling_faces_4' group='falling_faces_info'>
+							<p>The third level is the same as the second level, but the colors are removed from the faces. This ensures that players are focusing on the facial expressions themselves, and not on other unrelated stimuli such as color.</p>
+							</cms:editable>
+						</div>
+						<div class="game-orbit-item">
+							<p><a class="fancybox" href="images/kinect/ff_explosion.png"><img src="images/kinect/ff_explosion.png" alt="Prompt to burst faces"></a><a class="fancybox" href="images/kinect/ff_no_negative_feedback.png"><img src="images/kinect/ff_no_negative_feedback.png" alt="First level of Falling Faces"></a></p>
+							<cms:editable type='richtext' name='falling_faces_5' group='falling_faces_info'>
+							<p>Rewarding feedback in the form of an explosion is given when the player chooses correctly. If the player chooses incorrectly, there is no explosion or animation aside from the balls just move quickly towards the bottom of the screen. This is because learners may find negative feedback rewarding, and thus become distracted from the learning goal.</p>
+							</cms:editable>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="twelve columns">
+				<div id="hello-park-wrapper">
+					<h3 class="cloud-header">Hello Park</h3>
+					<div id="hello-park-orbit">
+						<cms:editable name='hello_park_info' label='Hello Park Orbit' type='group' />
+						<div class="game-orbit-item">
+							<p><a class="fancybox" href="images/kinect/menu_hp.png"><img src="images/kinect/menu_hp.png" alt="choosing Hello Park from the main menu"></a></p>
+							<cms:editable type='richtext' name='hello_park_1' group='hello_park_info'>
+							<p>Hello Park is designed to help the player learn how to greet people by waving his/her hand. A proper handwave consists of raising one's hand so that it is above the elbow, and pivoting one's hand back and forth from the elbow. The idea is that with repeated practice, the player can comfortably perform a more natural greeting to others with less anxiety.</p>
+							</cms:editable>
+						</div>
+						<div class="game-orbit-item">
+							<p><a class="fancybox" href="images/kinect/hp_prompt.png"><img src="images/kinect/hp_prompt.png" alt="Hello Park prompt"></a></p>
+							<cms:editable type='richtext' name='hello_park_2' group='hello_park_info'>
+							<p>The player is situated in a park scene. At the beginning of the activity a prompt is displayed showing the particular character that the player needs to wave to. Then the prompt goes away and people begin walking towards the player in the park. The player needs to learn to remember important cues and exercise memory and matching in order to determine who he/she needs to wave to.</p>
+							</cms:editable>
+						</div>
+						<div class="game-orbit-item">
+							<p><a class="fancybox" href="images/kinect/hp_james_wave.png"><img src="images/kinect/hp_james_wave.png" alt="Waving to the right person"></a></p>
+							<cms:editable type='richtext' name='hello_park_3' group='hello_park_info'>
+							<p>When the player waves to the correct person, the character waves back to the player. </p>
+							</cms:editable>
+						</div>
+						<div class="game-orbit-item">
+							<p><a class="fancybox" href="images/kinect/hp_no_negative_feedback.png"><img src="images/kinect/hp_no_negative_feedback.png" alt="No exciting negative feedback"></a></p>
+							<cms:editable type='richtext' name='hello_park_4' group='hello_park_info'>
+							<p>Currently, if the player waves to the wrong person, nothing happens except that the character walks faster off screen. This is in alignment with our principle of not implementing blatant/exciting negative feedback that might distract from the learning goal.</p>
+							</cms:editable>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<?php require_once("footer.php"); ?>
 	</div>
 	<!-- container -->
@@ -103,7 +192,10 @@
 
 	<!-- Included JS Files -->
 	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/jquery-ui-1.8.16.custom.min.js"></script>
 	<script src="javascripts/foundation.min.js"></script>
+	<script src="javascripts/fancybox2/jquery.fancybox.js"></script>
+	<script src="javascripts/fancybox2/helpers/jquery.fancybox-media.js"></script>
 	<script src="javascripts/app.js"></script>
 
 </body>

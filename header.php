@@ -9,7 +9,7 @@
 	<div class="six columns">
 		<nav id="nav-bar">
 			<ul class="nav-bar tabs">
-				<li class="has-flyout" id="products-nav-item">
+				<li id="products-nav-item">
 					<a href="#">products <img src="images/menubar/nav-icon-about.png" alt=""></a>
 					<ul class="flyout">
 						<li><a href="<cms:link masterpage='kinect.php' />">Me.Mu for Kinect</a></li>

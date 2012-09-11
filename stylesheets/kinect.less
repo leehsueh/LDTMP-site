@@ -1,5 +1,79 @@
 @import 'shared';
 
+@teal: rgba(19, 168, 158, 0.7);
+
+#download-header {
+	text-align: left;
+	img, button {
+		width: 45%;
+	}
+	button.button {
+		height: 50px;
+		padding: 5px;
+	}
+	margin-bottom: 10px;
+}
+.link-list#download-modals {
+	margin-bottom: 0;
+	li a {
+		color: black;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.link-list#game-links {
+	li a {
+		background-color: @teal;
+		color: white;
+		font-weight: bold;
+		padding: 10px;
+		.border-radius(10px);
+		&:hover {
+			background-color: fadein(@teal, 40%);
+		}
+	}
+}
+
+#falling-faces-wrapper, #hello-park-wrapper {
+	.faded-panel;
+	background-color: white;
+	padding: 10px;
+	margin: 50px auto;
+	.cloud-header {
+		z-index: 41; /* to put above the orbit stuff */
+	}
+
+	#falling-faces-orbit, #hello-park-orbit {
+		background: url('../images/spinner.gif') center center white no-repeat;
+		height: 300px;
+		.game-orbit-item {
+			display: none;
+		}
+		&.orbit {
+			background: none;
+			.game-orbit-item {
+				display: block;
+			}
+		}
+	}
+}
+.game-orbit-item {
+	background-color: white;
+	padding: 40px;
+	&> p:first-child {
+		text-align: center;
+	}
+	img {
+		// float: left;
+		width: 300px;
+		margin: 10px 20px 10px 0;
+		.transition;
+		&:hover {
+			.scale(1.25, 1.25);
+		}
+	}
+}
 .flex-video {
 	margin-bottom: 50px;
 }
