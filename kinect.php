@@ -51,7 +51,7 @@
 			</div>
 			<div class="six columns">
 				<div id="download-header">
-					<p><button class="nice large primary button disabled" disabled="disabled">Download Coming Soon</button></p>
+					<p><a class="nice large primary button" href="http://dl.dropbox.com/u/9815502/Memu_v1.0.zip">Download Me.Mu v1.0</a></p>
 					<ul id="download-modals">
 						<li><a href="#" data-reveal-id="requirements-modal">Requirements</a></li>
 						<li><a href="#" data-reveal-id="instructions-modal">Setup Instructions</a></li>

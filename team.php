@@ -43,6 +43,7 @@
 			<div class="twelve columns">
 				<div class="orbit-item" id="team-container">
 					<h3 class="cloud-header light-green">Team</h3>
+					<p><cms:editable name='team_blurb' type='text'>Feel free to email us with comments, questions, issues, bugs, etc!</cms:editable></p>
 					<ul id="team-list">
 				  		<li>
 				  			<cms:editable name='hainlee_info' label='Hain-Lee' type='group' />
