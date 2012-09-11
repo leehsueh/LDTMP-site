@@ -8,25 +8,38 @@
 		width: 45%;
 	}
 	button.button {
-		height: 50px;
-		padding: 5px;
+		padding: 10px;
+		font-family: 'DKHarimauRegular', sans-serif;
+		.border-radius(100px);
+		border: dashed 3px @teal;
+		background: white;
+		color: @memuGray;
+		display: block;
+		float: left;
 	}
-	margin-bottom: 10px;
-}
-.link-list#download-modals {
-	margin-bottom: 0;
-	li a {
-		color: black;
-		&:hover {
-			text-decoration: underline;
+	#download-modals {
+		float: left;
+		margin: 5px 0 0 10px;
+		li {
+			display: block;
+		}
+		li a {
+			color: black;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
+	margin-bottom: 10px;
+	&::after{ content: "."; display: block; height: 0; font-size:0; clear: both; visibility:hidden; }
 }
+
 .link-list#game-links {
 	li a {
 		background-color: @teal;
 		color: white;
 		font-weight: bold;
+		font-family: 'DKHarimauRegular', sans-serif;
 		padding: 10px;
 		.border-radius(10px);
 		&:hover {

@@ -289,14 +289,22 @@ body {
 	padding-top: @cloudHeight * @x / 2.5;
 	background-image: url('../images/cloud_red.png');
 
+	@red: #f69890;
+	@green: #55b5ae;
+	@lightgreen: #aed136;
+	color: @red;
+
 	&.red {
 		background-image: url('../images/cloud_red.png');
+		color: @red;
 	}
 	&.green {
 		background-image: url('../images/cloud_green.png');
+		color: @green;
 	}
 	&.light-green {
 		background-image: url('../images/cloud_lightgreen.png');
+		color: @lightgreen;
 	}
 }
 

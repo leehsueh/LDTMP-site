@@ -52,8 +52,8 @@
 			<div class="six columns">
 				<div id="download-header">
 					<p><button class="nice large primary button disabled" disabled="disabled">Download Coming Soon</button></p>
-					<ul class="link-list" id="download-modals">
-						<li><a href="#" data-reveal-id="requirements-modal">Requirements</a></p></li>
+					<ul id="download-modals">
+						<li><a href="#" data-reveal-id="requirements-modal">Requirements</a></li>
 						<li><a href="#" data-reveal-id="instructions-modal">Setup Instructions</a></li>
 					</ul>
 				</div>
