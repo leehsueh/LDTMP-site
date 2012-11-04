@@ -36,6 +36,8 @@
 	<!-- fancybox -->
 	<link rel="stylesheet" href="javascripts/fancybox2/jquery.fancybox.css?v=2.1.0" type="text/css" media="screen" />
 
+	<?php include_once('ga.php'); ?>
+
 </head>
 <body>
 
