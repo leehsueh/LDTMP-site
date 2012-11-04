@@ -47,7 +47,7 @@
 		<div class="row">
 			<div class="six columns">
 				<a href="<cms:link masterpage='kinect.php' />"><div class="product-container" id="memu-kinect-container">
-					<img src="images/memu_1big.png" alt="Me.Mu for Kinect">
+					<img src="images/kinect/memu_logo_kinect.png" alt="Me.Mu for Kinect">
 					<p><cms:editable name='memu_description' type='text'>A pair of mini-games using Kinect&trade; for Windows</cms:editable></p>
 				</div></a>
 			</div>

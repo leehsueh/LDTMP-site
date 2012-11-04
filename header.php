@@ -10,7 +10,7 @@
 		<nav id="nav-bar">
 			<ul class="nav-bar tabs">
 				<li id="products-nav-item">
-					<a href="#">products <img src="images/menubar/nav-icon-about.png" alt=""></a>
+					<a href="#">products <img src="images/menubar/nav-icon-products.png" alt=""></a>
 					<ul class="flyout">
 						<li><a href="<cms:link masterpage='kinect.php' />">Me.Mu for Kinect</a></li>
 						<li><a href="<cms:link masterpage='emotionary.php' />">Emotionary for iPad</a></li>
